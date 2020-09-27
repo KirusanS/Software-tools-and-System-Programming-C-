@@ -1,4 +1,4 @@
-An image database created using struct and pointers 
+**An image database created using struct and pointers **
 
 A simple image database used to store images. It will also allow the users to query contents to find all images that have particular attributes. 
 
