@@ -1,4 +1,4 @@
-A simple ppm image editor that can support three simple functions
+**A simple ppm image editor that can support three simple functions**
 
 
 
