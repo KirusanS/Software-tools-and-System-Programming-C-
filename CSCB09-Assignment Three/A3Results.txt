@@ -1,0 +1,2716 @@
+================================StudentID: subeetha================================
+Invoking: timeout 10s ./sanity.sh 
+===== Testing compilation and error messages =====
+Testing one_process
+Test 1a: one_process with illegal argument should print errors:
+T1a: passed
+
+Test 1b: one_process with illegal destination should print errors:
+T1b: passed
+
+Testing image_retrieval
+Test 1a: image_retrieval with illegal argument should print errors:
+T1a: passed
+
+Test 1b: image_retrieval with illegal destination should print errors:
+T1b: passed
+
+COMPILATION AND ERRORS (out of 25): 25.00
+===== Test Cases without Errors =====
+============Testing one_process==============
+[INFO]: Testing with actual_same_image and expecting: big_table_chopped.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/actual_same_image ../A3_testcases//source_images/actual_same_image.ppm
+../A3_testcases/actual_same_image/subfolder/.DS_Store
+../A3_testcases/actual_same_image/subfolder/basket_70.ppm
+../A3_testcases/actual_same_image/subfolder/basket_chopped.ppm
+../A3_testcases/actual_same_image/subfolder/big_table_70.ppm
+../A3_testcases/actual_same_image/subfolder/big_table_chopped.ppm
+../A3_testcases/actual_same_image/subfolder/black_buck_70.ppm
+../A3_testcases/actual_same_image/subfolder2/giraffe_70.ppm
+../A3_testcases/actual_same_image/subfolder2/small_70.ppm
+../A3_testcases/actual_same_image/subfolder2/table_70.ppm
+../A3_testcases/actual_same_image/subfolder2/whale_70.ppm
+../A3_testcases/actual_same_image/subfolder2/whale_cropped.ppm
+The most similar image is ../A3_testcases/actual_same_image/subfolder/big_table_chopped.ppm with a distance of 0.000000
+[INFO]: Testing distance for actual_same_image and expecting: 0.000000
+[SUCCESS]: [CASE]: distance for actual_same_image
+[SUCCESS]: [CASE]: actual_same_image
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s one_process ../source_images/actual_same_image.ppm
+./subfolder/.DS_Store
+./subfolder/basket_70.ppm
+./subfolder/basket_chopped.ppm
+./subfolder/big_table_70.ppm
+./subfolder/big_table_chopped.ppm
+./subfolder/black_buck_70.ppm
+./subfolder2/giraffe_70.ppm
+./subfolder2/small_70.ppm
+./subfolder2/table_70.ppm
+./subfolder2/whale_70.ppm
+./subfolder2/whale_cropped.ppm
+The most similar image is ./subfolder/big_table_chopped.ppm with a distance of 0.000000
+[INFO]: Testing distance for actual_same_image and expecting: 0.000000
+[SUCCESS]: [CASE]: distance for actual_same_image
+[SUCCESS]: [CASE]: actual_same_image
+
+[INFO]: Testing with different_set_similar_images and expecting: table_03_cropped.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/different_set_similar_images ../A3_testcases//source_images/different_set_similar_images.ppm
+../A3_testcases/different_set_similar_images/set1/.DS_Store
+../A3_testcases/different_set_similar_images/set1/giraffe_00_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/giraffe_01_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/giraffe_02_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/table_00_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/table_01_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/table_02_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/table_03_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/table_04_cropped.ppm
+The most similar image is ../A3_testcases/different_set_similar_images/set1/table_03_cropped.ppm with a distance of 0.277000
+[SUCCESS]: [CASE]: different_set_similar_images
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s one_process ../source_images/different_set_similar_images.ppm
+./set1/.DS_Store
+./set1/giraffe_00_cropped.ppm
+./set1/giraffe_01_cropped.ppm
+./set1/giraffe_02_cropped.ppm
+./set1/table_00_cropped.ppm
+./set1/table_01_cropped.ppm
+./set1/table_02_cropped.ppm
+./set1/table_03_cropped.ppm
+./set1/table_04_cropped.ppm
+The most similar image is ./set1/table_03_cropped.ppm with a distance of 0.277000
+[SUCCESS]: [CASE]: different_set_similar_images
+
+[INFO]: Testing with distinct_large_picture and expecting: big_table_cropped.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/distinct_large_picture ../A3_testcases//source_images/distinct_large_picture.ppm
+../A3_testcases/distinct_large_picture/sub/.DS_Store
+../A3_testcases/distinct_large_picture/sub/basket_70_cropped.ppm
+../A3_testcases/distinct_large_picture/sub/big_table_cropped.ppm
+../A3_testcases/distinct_large_picture/sub/black_buck_70_cropped.ppm
+../A3_testcases/distinct_large_picture/sub/giraffe_70_cropped.ppm
+../A3_testcases/distinct_large_picture/sub/whale_70_cropped.ppm
+The most similar image is ../A3_testcases/distinct_large_picture/sub/big_table_cropped.ppm with a distance of 122.558945
+[INFO]: Testing distance for distinct_large_picture and expecting: 122.558945
+[SUCCESS]: [CASE]: distance for distinct_large_picture
+[SUCCESS]: [CASE]: distinct_large_picture
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s one_process ../source_images/distinct_large_picture.ppm
+./sub/.DS_Store
+./sub/basket_70_cropped.ppm
+./sub/big_table_cropped.ppm
+./sub/black_buck_70_cropped.ppm
+./sub/giraffe_70_cropped.ppm
+./sub/whale_70_cropped.ppm
+The most similar image is ./sub/big_table_cropped.ppm with a distance of 122.558945
+[INFO]: Testing distance for distinct_large_picture and expecting: 122.558945
+[SUCCESS]: [CASE]: distance for distinct_large_picture
+[SUCCESS]: [CASE]: distinct_large_picture
+
+[INFO]: Testing with many_small_pics and expecting: small_466.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/many_small_pics ../A3_testcases//source_images/many_small_pics.ppm
+../A3_testcases/many_small_pics/sub1/.DS_Store
+../A3_testcases/many_small_pics/sub1/small_000.ppm
+../A3_testcases/many_small_pics/sub1/small_001.ppm
+../A3_testcases/many_small_pics/sub1/small_016.ppm
+../A3_testcases/many_small_pics/sub1/small_172.ppm
+../A3_testcases/many_small_pics/sub1/small_173.ppm
+../A3_testcases/many_small_pics/sub1/small_174.ppm
+../A3_testcases/many_small_pics/sub1/small_175.ppm
+../A3_testcases/many_small_pics/sub1/small_176.ppm
+../A3_testcases/many_small_pics/sub1/small_177.ppm
+../A3_testcases/many_small_pics/sub1/small_178.ppm
+../A3_testcases/many_small_pics/sub1/small_179.ppm
+../A3_testcases/many_small_pics/sub1/small_180.ppm
+../A3_testcases/many_small_pics/sub1/small_181.ppm
+../A3_testcases/many_small_pics/sub1/small_182.ppm
+../A3_testcases/many_small_pics/sub1/small_183.ppm
+../A3_testcases/many_small_pics/sub1/small_184.ppm
+../A3_testcases/many_small_pics/sub1/small_185.ppm
+../A3_testcases/many_small_pics/sub1/small_186.ppm
+../A3_testcases/many_small_pics/sub1/small_187.ppm
+../A3_testcases/many_small_pics/sub1/small_188.ppm
+../A3_testcases/many_small_pics/sub1/small_189.ppm
+../A3_testcases/many_small_pics/sub1/small_190.ppm
+../A3_testcases/many_small_pics/sub1/small_191.ppm
+../A3_testcases/many_small_pics/sub1/small_192.ppm
+../A3_testcases/many_small_pics/sub1/small_193.ppm
+../A3_testcases/many_small_pics/sub1/small_194.ppm
+../A3_testcases/many_small_pics/sub1/small_195.ppm
+../A3_testcases/many_small_pics/sub1/small_196.ppm
+../A3_testcases/many_small_pics/sub1/small_197.ppm
+../A3_testcases/many_small_pics/sub1/small_198.ppm
+../A3_testcases/many_small_pics/sub1/small_199.ppm
+../A3_testcases/many_small_pics/sub1/small_200.ppm
+../A3_testcases/many_small_pics/sub1/small_201.ppm
+../A3_testcases/many_small_pics/sub1/small_202.ppm
+../A3_testcases/many_small_pics/sub1/small_203.ppm
+../A3_testcases/many_small_pics/sub1/small_204.ppm
+../A3_testcases/many_small_pics/sub1/small_205.ppm
+../A3_testcases/many_small_pics/sub1/small_206.ppm
+../A3_testcases/many_small_pics/sub1/small_207.ppm
+../A3_testcases/many_small_pics/sub1/small_208.ppm
+../A3_testcases/many_small_pics/sub1/small_209.ppm
+../A3_testcases/many_small_pics/sub1/small_210.ppm
+../A3_testcases/many_small_pics/sub1/small_211.ppm
+../A3_testcases/many_small_pics/sub1/small_212.ppm
+../A3_testcases/many_small_pics/sub1/small_213.ppm
+../A3_testcases/many_small_pics/sub1/small_214.ppm
+../A3_testcases/many_small_pics/sub1/small_215.ppm
+../A3_testcases/many_small_pics/sub1/small_349.ppm
+../A3_testcases/many_small_pics/sub1/small_350.ppm
+../A3_testcases/many_small_pics/sub1/small_351.ppm
+../A3_testcases/many_small_pics/sub1/small_352.ppm
+../A3_testcases/many_small_pics/sub1/small_353.ppm
+../A3_testcases/many_small_pics/sub1/small_354.ppm
+../A3_testcases/many_small_pics/sub1/small_355.ppm
+../A3_testcases/many_small_pics/sub1/small_356.ppm
+../A3_testcases/many_small_pics/sub1/small_357.ppm
+../A3_testcases/many_small_pics/sub1/small_358.ppm
+../A3_testcases/many_small_pics/sub1/small_359.ppm
+../A3_testcases/many_small_pics/sub1/small_360.ppm
+../A3_testcases/many_small_pics/sub1/small_361.ppm
+../A3_testcases/many_small_pics/sub1/small_362.ppm
+../A3_testcases/many_small_pics/sub1/small_363.ppm
+../A3_testcases/many_small_pics/sub1/small_364.ppm
+../A3_testcases/many_small_pics/sub1/small_365.ppm
+../A3_testcases/many_small_pics/sub1/small_366.ppm
+../A3_testcases/many_small_pics/sub1/small_367.ppm
+../A3_testcases/many_small_pics/sub1/small_368.ppm
+../A3_testcases/many_small_pics/sub1/small_369.ppm
+../A3_testcases/many_small_pics/sub1/small_370.ppm
+../A3_testcases/many_small_pics/sub1/small_371.ppm
+../A3_testcases/many_small_pics/sub1/small_372.ppm
+../A3_testcases/many_small_pics/sub1/small_373.ppm
+../A3_testcases/many_small_pics/sub1/small_374.ppm
+../A3_testcases/many_small_pics/sub1/small_375.ppm
+../A3_testcases/many_small_pics/sub1/small_376.ppm
+../A3_testcases/many_small_pics/sub1/small_377.ppm
+../A3_testcases/many_small_pics/sub1/small_378.ppm
+../A3_testcases/many_small_pics/sub1/small_379.ppm
+../A3_testcases/many_small_pics/sub1/small_380.ppm
+../A3_testcases/many_small_pics/sub1/small_381.ppm
+../A3_testcases/many_small_pics/sub1/small_382.ppm
+../A3_testcases/many_small_pics/sub1/small_383.ppm
+../A3_testcases/many_small_pics/sub1/small_384.ppm
+../A3_testcases/many_small_pics/sub1/small_385.ppm
+../A3_testcases/many_small_pics/sub1/small_386.ppm
+../A3_testcases/many_small_pics/sub1/small_387.ppm
+../A3_testcases/many_small_pics/sub1/small_388.ppm
+../A3_testcases/many_small_pics/sub1/small_389.ppm
+../A3_testcases/many_small_pics/sub1/small_390.ppm
+../A3_testcases/many_small_pics/sub1/small_391.ppm
+../A3_testcases/many_small_pics/sub1/small_392.ppm
+../A3_testcases/many_small_pics/sub1/small_393.ppm
+../A3_testcases/many_small_pics/sub1/small_394.ppm
+../A3_testcases/many_small_pics/sub1/small_395.ppm
+../A3_testcases/many_small_pics/sub1/small_396.ppm
+../A3_testcases/many_small_pics/sub1/small_397.ppm
+../A3_testcases/many_small_pics/sub1/small_398.ppm
+../A3_testcases/many_small_pics/sub1/small_399.ppm
+../A3_testcases/many_small_pics/sub1/small_400.ppm
+../A3_testcases/many_small_pics/sub1/small_401.ppm
+../A3_testcases/many_small_pics/sub1/small_402.ppm
+../A3_testcases/many_small_pics/sub1/small_403.ppm
+../A3_testcases/many_small_pics/sub1/small_404.ppm
+../A3_testcases/many_small_pics/sub1/small_405.ppm
+../A3_testcases/many_small_pics/sub1/small_406.ppm
+../A3_testcases/many_small_pics/sub1/small_407.ppm
+../A3_testcases/many_small_pics/sub1/small_408.ppm
+../A3_testcases/many_small_pics/sub1/small_409.ppm
+../A3_testcases/many_small_pics/sub1/small_410.ppm
+../A3_testcases/many_small_pics/sub1/small_411.ppm
+../A3_testcases/many_small_pics/sub1/small_412.ppm
+../A3_testcases/many_small_pics/sub1/small_413.ppm
+../A3_testcases/many_small_pics/sub1/small_414.ppm
+../A3_testcases/many_small_pics/sub1/small_415.ppm
+../A3_testcases/many_small_pics/sub1/small_416.ppm
+../A3_testcases/many_small_pics/sub1/small_417.ppm
+../A3_testcases/many_small_pics/sub1/small_418.ppm
+../A3_testcases/many_small_pics/sub1/small_419.ppm
+../A3_testcases/many_small_pics/sub1/small_420.ppm
+../A3_testcases/many_small_pics/sub1/small_421.ppm
+../A3_testcases/many_small_pics/sub1/small_422.ppm
+../A3_testcases/many_small_pics/sub1/small_423.ppm
+../A3_testcases/many_small_pics/sub1/small_424.ppm
+../A3_testcases/many_small_pics/sub1/small_425.ppm
+../A3_testcases/many_small_pics/sub1/small_426.ppm
+../A3_testcases/many_small_pics/sub1/small_427.ppm
+../A3_testcases/many_small_pics/sub1/small_428.ppm
+../A3_testcases/many_small_pics/sub1/small_429.ppm
+../A3_testcases/many_small_pics/sub1/small_430.ppm
+../A3_testcases/many_small_pics/sub1/small_431.ppm
+../A3_testcases/many_small_pics/sub1/small_432.ppm
+../A3_testcases/many_small_pics/sub1/small_433.ppm
+../A3_testcases/many_small_pics/sub1/small_434.ppm
+../A3_testcases/many_small_pics/sub1/small_435.ppm
+../A3_testcases/many_small_pics/sub1/small_436.ppm
+../A3_testcases/many_small_pics/sub1/small_437.ppm
+../A3_testcases/many_small_pics/sub1/small_438.ppm
+../A3_testcases/many_small_pics/sub1/small_439.ppm
+../A3_testcases/many_small_pics/sub1/small_440.ppm
+../A3_testcases/many_small_pics/sub1/small_441.ppm
+../A3_testcases/many_small_pics/sub1/small_442.ppm
+../A3_testcases/many_small_pics/sub1/small_443.ppm
+../A3_testcases/many_small_pics/sub1/small_444.ppm
+../A3_testcases/many_small_pics/sub1/small_445.ppm
+../A3_testcases/many_small_pics/sub1/small_446.ppm
+../A3_testcases/many_small_pics/sub1/small_447.ppm
+../A3_testcases/many_small_pics/sub1/small_448.ppm
+../A3_testcases/many_small_pics/sub1/small_449.ppm
+../A3_testcases/many_small_pics/sub1/small_450.ppm
+../A3_testcases/many_small_pics/sub1/small_451.ppm
+../A3_testcases/many_small_pics/sub1/small_452.ppm
+../A3_testcases/many_small_pics/sub1/small_453.ppm
+../A3_testcases/many_small_pics/sub1/small_454.ppm
+../A3_testcases/many_small_pics/sub1/small_455.ppm
+../A3_testcases/many_small_pics/sub1/small_456.ppm
+../A3_testcases/many_small_pics/sub1/small_457.ppm
+../A3_testcases/many_small_pics/sub1/small_458.ppm
+../A3_testcases/many_small_pics/sub1/small_459.ppm
+../A3_testcases/many_small_pics/sub1/small_460.ppm
+../A3_testcases/many_small_pics/sub1/small_461.ppm
+../A3_testcases/many_small_pics/sub1/small_462.ppm
+../A3_testcases/many_small_pics/sub1/small_463.ppm
+../A3_testcases/many_small_pics/sub1/small_464.ppm
+../A3_testcases/many_small_pics/sub1/small_479.ppm
+../A3_testcases/many_small_pics/sub1/small_480.ppm
+../A3_testcases/many_small_pics/sub1/small_481.ppm
+../A3_testcases/many_small_pics/sub1/small_482.ppm
+../A3_testcases/many_small_pics/sub1/small_483.ppm
+../A3_testcases/many_small_pics/sub1/small_484.ppm
+../A3_testcases/many_small_pics/sub1/small_485.ppm
+../A3_testcases/many_small_pics/sub1/small_486.ppm
+../A3_testcases/many_small_pics/sub1/small_487.ppm
+../A3_testcases/many_small_pics/sub1/small_488.ppm
+../A3_testcases/many_small_pics/sub1/small_489.ppm
+../A3_testcases/many_small_pics/sub1/small_490.ppm
+../A3_testcases/many_small_pics/sub1/small_491.ppm
+../A3_testcases/many_small_pics/sub1/small_492.ppm
+../A3_testcases/many_small_pics/sub1/small_493.ppm
+../A3_testcases/many_small_pics/sub1/small_494.ppm
+../A3_testcases/many_small_pics/sub1/small_495.ppm
+../A3_testcases/many_small_pics/sub1/small_496.ppm
+../A3_testcases/many_small_pics/sub1/small_497.ppm
+../A3_testcases/many_small_pics/sub1/small_498.ppm
+../A3_testcases/many_small_pics/sub1/small_499.ppm
+../A3_testcases/many_small_pics/sub2/.DS_Store
+../A3_testcases/many_small_pics/sub2/small_002.ppm
+../A3_testcases/many_small_pics/sub2/small_003.ppm
+../A3_testcases/many_small_pics/sub2/small_004.ppm
+../A3_testcases/many_small_pics/sub2/small_005.ppm
+../A3_testcases/many_small_pics/sub2/small_006.ppm
+../A3_testcases/many_small_pics/sub2/small_007.ppm
+../A3_testcases/many_small_pics/sub2/small_008.ppm
+../A3_testcases/many_small_pics/sub2/small_009.ppm
+../A3_testcases/many_small_pics/sub2/small_010.ppm
+../A3_testcases/many_small_pics/sub2/small_011.ppm
+../A3_testcases/many_small_pics/sub2/small_012.ppm
+../A3_testcases/many_small_pics/sub2/small_013.ppm
+../A3_testcases/many_small_pics/sub2/small_014.ppm
+../A3_testcases/many_small_pics/sub2/small_015.ppm
+../A3_testcases/many_small_pics/sub2/small_216.ppm
+../A3_testcases/many_small_pics/sub2/small_217.ppm
+../A3_testcases/many_small_pics/sub2/small_218.ppm
+../A3_testcases/many_small_pics/sub2/small_219.ppm
+../A3_testcases/many_small_pics/sub2/small_220.ppm
+../A3_testcases/many_small_pics/sub2/small_221.ppm
+../A3_testcases/many_small_pics/sub2/small_222.ppm
+../A3_testcases/many_small_pics/sub2/small_223.ppm
+../A3_testcases/many_small_pics/sub2/small_224.ppm
+../A3_testcases/many_small_pics/sub2/small_225.ppm
+../A3_testcases/many_small_pics/sub2/small_226.ppm
+../A3_testcases/many_small_pics/sub2/small_227.ppm
+../A3_testcases/many_small_pics/sub2/small_228.ppm
+../A3_testcases/many_small_pics/sub2/small_229.ppm
+../A3_testcases/many_small_pics/sub2/small_230.ppm
+../A3_testcases/many_small_pics/sub2/small_231.ppm
+../A3_testcases/many_small_pics/sub2/small_232.ppm
+../A3_testcases/many_small_pics/sub2/small_233.ppm
+../A3_testcases/many_small_pics/sub2/small_234.ppm
+../A3_testcases/many_small_pics/sub2/small_235.ppm
+../A3_testcases/many_small_pics/sub2/small_236.ppm
+../A3_testcases/many_small_pics/sub2/small_237.ppm
+../A3_testcases/many_small_pics/sub2/small_238.ppm
+../A3_testcases/many_small_pics/sub2/small_239.ppm
+../A3_testcases/many_small_pics/sub2/small_240.ppm
+../A3_testcases/many_small_pics/sub2/small_241.ppm
+../A3_testcases/many_small_pics/sub2/small_242.ppm
+../A3_testcases/many_small_pics/sub2/small_243.ppm
+../A3_testcases/many_small_pics/sub2/small_244.ppm
+../A3_testcases/many_small_pics/sub2/small_245.ppm
+../A3_testcases/many_small_pics/sub2/small_246.ppm
+../A3_testcases/many_small_pics/sub2/small_247.ppm
+../A3_testcases/many_small_pics/sub2/small_248.ppm
+../A3_testcases/many_small_pics/sub2/small_249.ppm
+../A3_testcases/many_small_pics/sub2/small_250.ppm
+../A3_testcases/many_small_pics/sub2/small_251.ppm
+../A3_testcases/many_small_pics/sub2/small_252.ppm
+../A3_testcases/many_small_pics/sub2/small_253.ppm
+../A3_testcases/many_small_pics/sub2/small_254.ppm
+../A3_testcases/many_small_pics/sub2/small_255.ppm
+../A3_testcases/many_small_pics/sub2/small_256.ppm
+../A3_testcases/many_small_pics/sub2/small_257.ppm
+../A3_testcases/many_small_pics/sub2/small_258.ppm
+../A3_testcases/many_small_pics/sub2/small_259.ppm
+../A3_testcases/many_small_pics/sub2/small_260.ppm
+../A3_testcases/many_small_pics/sub2/small_261.ppm
+../A3_testcases/many_small_pics/sub2/small_262.ppm
+../A3_testcases/many_small_pics/sub2/small_263.ppm
+../A3_testcases/many_small_pics/sub2/small_264.ppm
+../A3_testcases/many_small_pics/sub2/small_265.ppm
+../A3_testcases/many_small_pics/sub2/small_266.ppm
+../A3_testcases/many_small_pics/sub2/small_267.ppm
+../A3_testcases/many_small_pics/sub2/small_268.ppm
+../A3_testcases/many_small_pics/sub2/small_269.ppm
+../A3_testcases/many_small_pics/sub2/small_270.ppm
+../A3_testcases/many_small_pics/sub2/small_271.ppm
+../A3_testcases/many_small_pics/sub2/small_272.ppm
+../A3_testcases/many_small_pics/sub2/small_273.ppm
+../A3_testcases/many_small_pics/sub2/small_274.ppm
+../A3_testcases/many_small_pics/sub2/small_275.ppm
+../A3_testcases/many_small_pics/sub2/small_276.ppm
+../A3_testcases/many_small_pics/sub2/small_277.ppm
+../A3_testcases/many_small_pics/sub2/small_278.ppm
+../A3_testcases/many_small_pics/sub2/small_279.ppm
+../A3_testcases/many_small_pics/sub2/small_280.ppm
+../A3_testcases/many_small_pics/sub2/small_281.ppm
+../A3_testcases/many_small_pics/sub2/small_282.ppm
+../A3_testcases/many_small_pics/sub2/small_283.ppm
+../A3_testcases/many_small_pics/sub2/small_284.ppm
+../A3_testcases/many_small_pics/sub2/small_285.ppm
+../A3_testcases/many_small_pics/sub2/small_286.ppm
+../A3_testcases/many_small_pics/sub2/small_287.ppm
+../A3_testcases/many_small_pics/sub2/small_288.ppm
+../A3_testcases/many_small_pics/sub2/small_289.ppm
+../A3_testcases/many_small_pics/sub2/small_290.ppm
+../A3_testcases/many_small_pics/sub2/small_291.ppm
+../A3_testcases/many_small_pics/sub2/small_292.ppm
+../A3_testcases/many_small_pics/sub2/small_293.ppm
+../A3_testcases/many_small_pics/sub2/small_294.ppm
+../A3_testcases/many_small_pics/sub2/small_295.ppm
+../A3_testcases/many_small_pics/sub2/small_296.ppm
+../A3_testcases/many_small_pics/sub2/small_297.ppm
+../A3_testcases/many_small_pics/sub2/small_298.ppm
+../A3_testcases/many_small_pics/sub2/small_299.ppm
+../A3_testcases/many_small_pics/sub2/small_300.ppm
+../A3_testcases/many_small_pics/sub2/small_301.ppm
+../A3_testcases/many_small_pics/sub2/small_302.ppm
+../A3_testcases/many_small_pics/sub2/small_303.ppm
+../A3_testcases/many_small_pics/sub2/small_304.ppm
+../A3_testcases/many_small_pics/sub2/small_305.ppm
+../A3_testcases/many_small_pics/sub2/small_306.ppm
+../A3_testcases/many_small_pics/sub2/small_307.ppm
+../A3_testcases/many_small_pics/sub2/small_308.ppm
+../A3_testcases/many_small_pics/sub2/small_309.ppm
+../A3_testcases/many_small_pics/sub2/small_310.ppm
+../A3_testcases/many_small_pics/sub2/small_311.ppm
+../A3_testcases/many_small_pics/sub2/small_312.ppm
+../A3_testcases/many_small_pics/sub2/small_313.ppm
+../A3_testcases/many_small_pics/sub2/small_314.ppm
+../A3_testcases/many_small_pics/sub2/small_315.ppm
+../A3_testcases/many_small_pics/sub2/small_316.ppm
+../A3_testcases/many_small_pics/sub2/small_317.ppm
+../A3_testcases/many_small_pics/sub2/small_318.ppm
+../A3_testcases/many_small_pics/sub2/small_319.ppm
+../A3_testcases/many_small_pics/sub2/small_320.ppm
+../A3_testcases/many_small_pics/sub2/small_321.ppm
+../A3_testcases/many_small_pics/sub2/small_322.ppm
+../A3_testcases/many_small_pics/sub2/small_323.ppm
+../A3_testcases/many_small_pics/sub2/small_324.ppm
+../A3_testcases/many_small_pics/sub2/small_325.ppm
+../A3_testcases/many_small_pics/sub2/small_326.ppm
+../A3_testcases/many_small_pics/sub2/small_327.ppm
+../A3_testcases/many_small_pics/sub2/small_328.ppm
+../A3_testcases/many_small_pics/sub2/small_329.ppm
+../A3_testcases/many_small_pics/sub2/small_330.ppm
+../A3_testcases/many_small_pics/sub2/small_331.ppm
+../A3_testcases/many_small_pics/sub2/small_332.ppm
+../A3_testcases/many_small_pics/sub2/small_333.ppm
+../A3_testcases/many_small_pics/sub2/small_334.ppm
+../A3_testcases/many_small_pics/sub2/small_335.ppm
+../A3_testcases/many_small_pics/sub2/small_336.ppm
+../A3_testcases/many_small_pics/sub2/small_337.ppm
+../A3_testcases/many_small_pics/sub2/small_338.ppm
+../A3_testcases/many_small_pics/sub2/small_339.ppm
+../A3_testcases/many_small_pics/sub2/small_340.ppm
+../A3_testcases/many_small_pics/sub2/small_341.ppm
+../A3_testcases/many_small_pics/sub2/small_342.ppm
+../A3_testcases/many_small_pics/sub2/small_343.ppm
+../A3_testcases/many_small_pics/sub2/small_344.ppm
+../A3_testcases/many_small_pics/sub2/small_345.ppm
+../A3_testcases/many_small_pics/sub2/small_346.ppm
+../A3_testcases/many_small_pics/sub2/small_347.ppm
+../A3_testcases/many_small_pics/sub2/small_348.ppm
+../A3_testcases/many_small_pics/sub3/small_017.ppm
+../A3_testcases/many_small_pics/sub3/small_018.ppm
+../A3_testcases/many_small_pics/sub3/small_019.ppm
+../A3_testcases/many_small_pics/sub3/small_020.ppm
+../A3_testcases/many_small_pics/sub3/small_021.ppm
+../A3_testcases/many_small_pics/sub3/small_022.ppm
+../A3_testcases/many_small_pics/sub3/small_023.ppm
+../A3_testcases/many_small_pics/sub3/small_030.ppm
+../A3_testcases/many_small_pics/sub3/small_031.ppm
+../A3_testcases/many_small_pics/sub3/small_032.ppm
+../A3_testcases/many_small_pics/sub3/small_033.ppm
+../A3_testcases/many_small_pics/sub3/small_034.ppm
+../A3_testcases/many_small_pics/sub3/small_035.ppm
+../A3_testcases/many_small_pics/sub3/small_036.ppm
+../A3_testcases/many_small_pics/sub3/small_037.ppm
+../A3_testcases/many_small_pics/sub3/small_038.ppm
+../A3_testcases/many_small_pics/sub3/small_039.ppm
+../A3_testcases/many_small_pics/sub3/small_040.ppm
+../A3_testcases/many_small_pics/sub3/small_041.ppm
+../A3_testcases/many_small_pics/sub3/small_042.ppm
+../A3_testcases/many_small_pics/sub3/small_043.ppm
+../A3_testcases/many_small_pics/sub3/small_044.ppm
+../A3_testcases/many_small_pics/sub3/small_045.ppm
+../A3_testcases/many_small_pics/sub3/small_046.ppm
+../A3_testcases/many_small_pics/sub3/small_047.ppm
+../A3_testcases/many_small_pics/sub3/small_048.ppm
+../A3_testcases/many_small_pics/sub3/small_049.ppm
+../A3_testcases/many_small_pics/sub3/small_050.ppm
+../A3_testcases/many_small_pics/sub3/small_051.ppm
+../A3_testcases/many_small_pics/sub3/small_052.ppm
+../A3_testcases/many_small_pics/sub3/small_053.ppm
+../A3_testcases/many_small_pics/sub3/small_054.ppm
+../A3_testcases/many_small_pics/sub3/small_055.ppm
+../A3_testcases/many_small_pics/sub3/small_056.ppm
+../A3_testcases/many_small_pics/sub3/small_057.ppm
+../A3_testcases/many_small_pics/sub3/small_058.ppm
+../A3_testcases/many_small_pics/sub3/small_059.ppm
+../A3_testcases/many_small_pics/sub3/small_060.ppm
+../A3_testcases/many_small_pics/sub3/small_061.ppm
+../A3_testcases/many_small_pics/sub3/small_062.ppm
+../A3_testcases/many_small_pics/sub3/small_063.ppm
+../A3_testcases/many_small_pics/sub3/small_064.ppm
+../A3_testcases/many_small_pics/sub3/small_065.ppm
+../A3_testcases/many_small_pics/sub3/small_066.ppm
+../A3_testcases/many_small_pics/sub3/small_067.ppm
+../A3_testcases/many_small_pics/sub3/small_068.ppm
+../A3_testcases/many_small_pics/sub3/small_069.ppm
+../A3_testcases/many_small_pics/sub3/small_070.ppm
+../A3_testcases/many_small_pics/sub3/small_071.ppm
+../A3_testcases/many_small_pics/sub3/small_072.ppm
+../A3_testcases/many_small_pics/sub3/small_073.ppm
+../A3_testcases/many_small_pics/sub3/small_074.ppm
+../A3_testcases/many_small_pics/sub3/small_075.ppm
+../A3_testcases/many_small_pics/sub3/small_076.ppm
+../A3_testcases/many_small_pics/sub3/small_077.ppm
+../A3_testcases/many_small_pics/sub3/small_078.ppm
+../A3_testcases/many_small_pics/sub3/small_079.ppm
+../A3_testcases/many_small_pics/sub3/small_080.ppm
+../A3_testcases/many_small_pics/sub3/small_081.ppm
+../A3_testcases/many_small_pics/sub3/small_082.ppm
+../A3_testcases/many_small_pics/sub3/small_083.ppm
+../A3_testcases/many_small_pics/sub3/small_084.ppm
+../A3_testcases/many_small_pics/sub3/small_085.ppm
+../A3_testcases/many_small_pics/sub3/small_086.ppm
+../A3_testcases/many_small_pics/sub3/small_087.ppm
+../A3_testcases/many_small_pics/sub3/small_088.ppm
+../A3_testcases/many_small_pics/sub3/small_089.ppm
+../A3_testcases/many_small_pics/sub3/small_090.ppm
+../A3_testcases/many_small_pics/sub3/small_091.ppm
+../A3_testcases/many_small_pics/sub3/small_092.ppm
+../A3_testcases/many_small_pics/sub3/small_093.ppm
+../A3_testcases/many_small_pics/sub3/small_094.ppm
+../A3_testcases/many_small_pics/sub3/small_095.ppm
+../A3_testcases/many_small_pics/sub3/small_096.ppm
+../A3_testcases/many_small_pics/sub3/small_097.ppm
+../A3_testcases/many_small_pics/sub3/small_098.ppm
+../A3_testcases/many_small_pics/sub3/small_099.ppm
+../A3_testcases/many_small_pics/sub3/small_100.ppm
+../A3_testcases/many_small_pics/sub3/small_101.ppm
+../A3_testcases/many_small_pics/sub3/small_102.ppm
+../A3_testcases/many_small_pics/sub3/small_103.ppm
+../A3_testcases/many_small_pics/sub3/small_104.ppm
+../A3_testcases/many_small_pics/sub3/small_105.ppm
+../A3_testcases/many_small_pics/sub3/small_106.ppm
+../A3_testcases/many_small_pics/sub3/small_107.ppm
+../A3_testcases/many_small_pics/sub3/small_108.ppm
+../A3_testcases/many_small_pics/sub3/small_109.ppm
+../A3_testcases/many_small_pics/sub3/small_110.ppm
+../A3_testcases/many_small_pics/sub3/small_111.ppm
+../A3_testcases/many_small_pics/sub3/small_112.ppm
+../A3_testcases/many_small_pics/sub3/small_113.ppm
+../A3_testcases/many_small_pics/sub3/small_114.ppm
+../A3_testcases/many_small_pics/sub3/small_115.ppm
+../A3_testcases/many_small_pics/sub3/small_116.ppm
+../A3_testcases/many_small_pics/sub3/small_117.ppm
+../A3_testcases/many_small_pics/sub3/small_118.ppm
+../A3_testcases/many_small_pics/sub3/small_119.ppm
+../A3_testcases/many_small_pics/sub3/small_120.ppm
+../A3_testcases/many_small_pics/sub3/small_121.ppm
+../A3_testcases/many_small_pics/sub3/small_122.ppm
+../A3_testcases/many_small_pics/sub3/small_123.ppm
+../A3_testcases/many_small_pics/sub3/small_124.ppm
+../A3_testcases/many_small_pics/sub3/small_125.ppm
+../A3_testcases/many_small_pics/sub3/small_126.ppm
+../A3_testcases/many_small_pics/sub3/small_127.ppm
+../A3_testcases/many_small_pics/sub3/small_128.ppm
+../A3_testcases/many_small_pics/sub3/small_129.ppm
+../A3_testcases/many_small_pics/sub3/small_130.ppm
+../A3_testcases/many_small_pics/sub3/small_131.ppm
+../A3_testcases/many_small_pics/sub3/small_132.ppm
+../A3_testcases/many_small_pics/sub3/small_133.ppm
+../A3_testcases/many_small_pics/sub3/small_134.ppm
+../A3_testcases/many_small_pics/sub3/small_135.ppm
+../A3_testcases/many_small_pics/sub3/small_136.ppm
+../A3_testcases/many_small_pics/sub3/small_137.ppm
+../A3_testcases/many_small_pics/sub3/small_138.ppm
+../A3_testcases/many_small_pics/sub3/small_139.ppm
+../A3_testcases/many_small_pics/sub3/small_140.ppm
+../A3_testcases/many_small_pics/sub3/small_141.ppm
+../A3_testcases/many_small_pics/sub3/small_142.ppm
+../A3_testcases/many_small_pics/sub3/small_143.ppm
+../A3_testcases/many_small_pics/sub3/small_144.ppm
+../A3_testcases/many_small_pics/sub3/small_145.ppm
+../A3_testcases/many_small_pics/sub3/small_146.ppm
+../A3_testcases/many_small_pics/sub3/small_147.ppm
+../A3_testcases/many_small_pics/sub3/small_148.ppm
+../A3_testcases/many_small_pics/sub3/small_149.ppm
+../A3_testcases/many_small_pics/sub3/small_150.ppm
+../A3_testcases/many_small_pics/sub3/small_151.ppm
+../A3_testcases/many_small_pics/sub3/small_152.ppm
+../A3_testcases/many_small_pics/sub3/small_153.ppm
+../A3_testcases/many_small_pics/sub3/small_154.ppm
+../A3_testcases/many_small_pics/sub3/small_155.ppm
+../A3_testcases/many_small_pics/sub3/small_156.ppm
+../A3_testcases/many_small_pics/sub3/small_157.ppm
+../A3_testcases/many_small_pics/sub3/small_158.ppm
+../A3_testcases/many_small_pics/sub3/small_159.ppm
+../A3_testcases/many_small_pics/sub3/small_160.ppm
+../A3_testcases/many_small_pics/sub3/small_161.ppm
+../A3_testcases/many_small_pics/sub3/small_162.ppm
+../A3_testcases/many_small_pics/sub3/small_163.ppm
+../A3_testcases/many_small_pics/sub3/small_164.ppm
+../A3_testcases/many_small_pics/sub3/small_165.ppm
+../A3_testcases/many_small_pics/sub3/small_166.ppm
+../A3_testcases/many_small_pics/sub3/small_167.ppm
+../A3_testcases/many_small_pics/sub3/small_168.ppm
+../A3_testcases/many_small_pics/sub3/small_169.ppm
+../A3_testcases/many_small_pics/sub3/small_170.ppm
+../A3_testcases/many_small_pics/sub3/small_171.ppm
+../A3_testcases/many_small_pics/sub4/small_024.ppm
+../A3_testcases/many_small_pics/sub4/small_025.ppm
+../A3_testcases/many_small_pics/sub4/small_026.ppm
+../A3_testcases/many_small_pics/sub4/small_027.ppm
+../A3_testcases/many_small_pics/sub4/small_028.ppm
+../A3_testcases/many_small_pics/sub4/small_029.ppm
+../A3_testcases/many_small_pics/sub4/small_465.ppm
+../A3_testcases/many_small_pics/sub4/small_466.ppm
+../A3_testcases/many_small_pics/sub4/small_467.ppm
+../A3_testcases/many_small_pics/sub4/small_468.ppm
+../A3_testcases/many_small_pics/sub4/small_469.ppm
+../A3_testcases/many_small_pics/sub4/small_470.ppm
+../A3_testcases/many_small_pics/sub4/small_471.ppm
+../A3_testcases/many_small_pics/sub4/small_472.ppm
+../A3_testcases/many_small_pics/sub4/small_473.ppm
+../A3_testcases/many_small_pics/sub4/small_474.ppm
+../A3_testcases/many_small_pics/sub4/small_475.ppm
+../A3_testcases/many_small_pics/sub4/small_476.ppm
+../A3_testcases/many_small_pics/sub4/small_477.ppm
+../A3_testcases/many_small_pics/sub4/small_478.ppm
+The most similar image is ../A3_testcases/many_small_pics/sub4/small_466.ppm with a distance of 1.562500
+[SUCCESS]: [CASE]: many_small_pics
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s one_process ../source_images/many_small_pics.ppm
+./sub1/.DS_Store
+./sub1/small_000.ppm
+./sub1/small_001.ppm
+./sub1/small_016.ppm
+./sub1/small_172.ppm
+./sub1/small_173.ppm
+./sub1/small_174.ppm
+./sub1/small_175.ppm
+./sub1/small_176.ppm
+./sub1/small_177.ppm
+./sub1/small_178.ppm
+./sub1/small_179.ppm
+./sub1/small_180.ppm
+./sub1/small_181.ppm
+./sub1/small_182.ppm
+./sub1/small_183.ppm
+./sub1/small_184.ppm
+./sub1/small_185.ppm
+./sub1/small_186.ppm
+./sub1/small_187.ppm
+./sub1/small_188.ppm
+./sub1/small_189.ppm
+./sub1/small_190.ppm
+./sub1/small_191.ppm
+./sub1/small_192.ppm
+./sub1/small_193.ppm
+./sub1/small_194.ppm
+./sub1/small_195.ppm
+./sub1/small_196.ppm
+./sub1/small_197.ppm
+./sub1/small_198.ppm
+./sub1/small_199.ppm
+./sub1/small_200.ppm
+./sub1/small_201.ppm
+./sub1/small_202.ppm
+./sub1/small_203.ppm
+./sub1/small_204.ppm
+./sub1/small_205.ppm
+./sub1/small_206.ppm
+./sub1/small_207.ppm
+./sub1/small_208.ppm
+./sub1/small_209.ppm
+./sub1/small_210.ppm
+./sub1/small_211.ppm
+./sub1/small_212.ppm
+./sub1/small_213.ppm
+./sub1/small_214.ppm
+./sub1/small_215.ppm
+./sub1/small_349.ppm
+./sub1/small_350.ppm
+./sub1/small_351.ppm
+./sub1/small_352.ppm
+./sub1/small_353.ppm
+./sub1/small_354.ppm
+./sub1/small_355.ppm
+./sub1/small_356.ppm
+./sub1/small_357.ppm
+./sub1/small_358.ppm
+./sub1/small_359.ppm
+./sub1/small_360.ppm
+./sub1/small_361.ppm
+./sub1/small_362.ppm
+./sub1/small_363.ppm
+./sub1/small_364.ppm
+./sub1/small_365.ppm
+./sub1/small_366.ppm
+./sub1/small_367.ppm
+./sub1/small_368.ppm
+./sub1/small_369.ppm
+./sub1/small_370.ppm
+./sub1/small_371.ppm
+./sub1/small_372.ppm
+./sub1/small_373.ppm
+./sub1/small_374.ppm
+./sub1/small_375.ppm
+./sub1/small_376.ppm
+./sub1/small_377.ppm
+./sub1/small_378.ppm
+./sub1/small_379.ppm
+./sub1/small_380.ppm
+./sub1/small_381.ppm
+./sub1/small_382.ppm
+./sub1/small_383.ppm
+./sub1/small_384.ppm
+./sub1/small_385.ppm
+./sub1/small_386.ppm
+./sub1/small_387.ppm
+./sub1/small_388.ppm
+./sub1/small_389.ppm
+./sub1/small_390.ppm
+./sub1/small_391.ppm
+./sub1/small_392.ppm
+./sub1/small_393.ppm
+./sub1/small_394.ppm
+./sub1/small_395.ppm
+./sub1/small_396.ppm
+./sub1/small_397.ppm
+./sub1/small_398.ppm
+./sub1/small_399.ppm
+./sub1/small_400.ppm
+./sub1/small_401.ppm
+./sub1/small_402.ppm
+./sub1/small_403.ppm
+./sub1/small_404.ppm
+./sub1/small_405.ppm
+./sub1/small_406.ppm
+./sub1/small_407.ppm
+./sub1/small_408.ppm
+./sub1/small_409.ppm
+./sub1/small_410.ppm
+./sub1/small_411.ppm
+./sub1/small_412.ppm
+./sub1/small_413.ppm
+./sub1/small_414.ppm
+./sub1/small_415.ppm
+./sub1/small_416.ppm
+./sub1/small_417.ppm
+./sub1/small_418.ppm
+./sub1/small_419.ppm
+./sub1/small_420.ppm
+./sub1/small_421.ppm
+./sub1/small_422.ppm
+./sub1/small_423.ppm
+./sub1/small_424.ppm
+./sub1/small_425.ppm
+./sub1/small_426.ppm
+./sub1/small_427.ppm
+./sub1/small_428.ppm
+./sub1/small_429.ppm
+./sub1/small_430.ppm
+./sub1/small_431.ppm
+./sub1/small_432.ppm
+./sub1/small_433.ppm
+./sub1/small_434.ppm
+./sub1/small_435.ppm
+./sub1/small_436.ppm
+./sub1/small_437.ppm
+./sub1/small_438.ppm
+./sub1/small_439.ppm
+./sub1/small_440.ppm
+./sub1/small_441.ppm
+./sub1/small_442.ppm
+./sub1/small_443.ppm
+./sub1/small_444.ppm
+./sub1/small_445.ppm
+./sub1/small_446.ppm
+./sub1/small_447.ppm
+./sub1/small_448.ppm
+./sub1/small_449.ppm
+./sub1/small_450.ppm
+./sub1/small_451.ppm
+./sub1/small_452.ppm
+./sub1/small_453.ppm
+./sub1/small_454.ppm
+./sub1/small_455.ppm
+./sub1/small_456.ppm
+./sub1/small_457.ppm
+./sub1/small_458.ppm
+./sub1/small_459.ppm
+./sub1/small_460.ppm
+./sub1/small_461.ppm
+./sub1/small_462.ppm
+./sub1/small_463.ppm
+./sub1/small_464.ppm
+./sub1/small_479.ppm
+./sub1/small_480.ppm
+./sub1/small_481.ppm
+./sub1/small_482.ppm
+./sub1/small_483.ppm
+./sub1/small_484.ppm
+./sub1/small_485.ppm
+./sub1/small_486.ppm
+./sub1/small_487.ppm
+./sub1/small_488.ppm
+./sub1/small_489.ppm
+./sub1/small_490.ppm
+./sub1/small_491.ppm
+./sub1/small_492.ppm
+./sub1/small_493.ppm
+./sub1/small_494.ppm
+./sub1/small_495.ppm
+./sub1/small_496.ppm
+./sub1/small_497.ppm
+./sub1/small_498.ppm
+./sub1/small_499.ppm
+./sub2/.DS_Store
+./sub2/small_002.ppm
+./sub2/small_003.ppm
+./sub2/small_004.ppm
+./sub2/small_005.ppm
+./sub2/small_006.ppm
+./sub2/small_007.ppm
+./sub2/small_008.ppm
+./sub2/small_009.ppm
+./sub2/small_010.ppm
+./sub2/small_011.ppm
+./sub2/small_012.ppm
+./sub2/small_013.ppm
+./sub2/small_014.ppm
+./sub2/small_015.ppm
+./sub2/small_216.ppm
+./sub2/small_217.ppm
+./sub2/small_218.ppm
+./sub2/small_219.ppm
+./sub2/small_220.ppm
+./sub2/small_221.ppm
+./sub2/small_222.ppm
+./sub2/small_223.ppm
+./sub2/small_224.ppm
+./sub2/small_225.ppm
+./sub2/small_226.ppm
+./sub2/small_227.ppm
+./sub2/small_228.ppm
+./sub2/small_229.ppm
+./sub2/small_230.ppm
+./sub2/small_231.ppm
+./sub2/small_232.ppm
+./sub2/small_233.ppm
+./sub2/small_234.ppm
+./sub2/small_235.ppm
+./sub2/small_236.ppm
+./sub2/small_237.ppm
+./sub2/small_238.ppm
+./sub2/small_239.ppm
+./sub2/small_240.ppm
+./sub2/small_241.ppm
+./sub2/small_242.ppm
+./sub2/small_243.ppm
+./sub2/small_244.ppm
+./sub2/small_245.ppm
+./sub2/small_246.ppm
+./sub2/small_247.ppm
+./sub2/small_248.ppm
+./sub2/small_249.ppm
+./sub2/small_250.ppm
+./sub2/small_251.ppm
+./sub2/small_252.ppm
+./sub2/small_253.ppm
+./sub2/small_254.ppm
+./sub2/small_255.ppm
+./sub2/small_256.ppm
+./sub2/small_257.ppm
+./sub2/small_258.ppm
+./sub2/small_259.ppm
+./sub2/small_260.ppm
+./sub2/small_261.ppm
+./sub2/small_262.ppm
+./sub2/small_263.ppm
+./sub2/small_264.ppm
+./sub2/small_265.ppm
+./sub2/small_266.ppm
+./sub2/small_267.ppm
+./sub2/small_268.ppm
+./sub2/small_269.ppm
+./sub2/small_270.ppm
+./sub2/small_271.ppm
+./sub2/small_272.ppm
+./sub2/small_273.ppm
+./sub2/small_274.ppm
+./sub2/small_275.ppm
+./sub2/small_276.ppm
+./sub2/small_277.ppm
+./sub2/small_278.ppm
+./sub2/small_279.ppm
+./sub2/small_280.ppm
+./sub2/small_281.ppm
+./sub2/small_282.ppm
+./sub2/small_283.ppm
+./sub2/small_284.ppm
+./sub2/small_285.ppm
+./sub2/small_286.ppm
+./sub2/small_287.ppm
+./sub2/small_288.ppm
+./sub2/small_289.ppm
+./sub2/small_290.ppm
+./sub2/small_291.ppm
+./sub2/small_292.ppm
+./sub2/small_293.ppm
+./sub2/small_294.ppm
+./sub2/small_295.ppm
+./sub2/small_296.ppm
+./sub2/small_297.ppm
+./sub2/small_298.ppm
+./sub2/small_299.ppm
+./sub2/small_300.ppm
+./sub2/small_301.ppm
+./sub2/small_302.ppm
+./sub2/small_303.ppm
+./sub2/small_304.ppm
+./sub2/small_305.ppm
+./sub2/small_306.ppm
+./sub2/small_307.ppm
+./sub2/small_308.ppm
+./sub2/small_309.ppm
+./sub2/small_310.ppm
+./sub2/small_311.ppm
+./sub2/small_312.ppm
+./sub2/small_313.ppm
+./sub2/small_314.ppm
+./sub2/small_315.ppm
+./sub2/small_316.ppm
+./sub2/small_317.ppm
+./sub2/small_318.ppm
+./sub2/small_319.ppm
+./sub2/small_320.ppm
+./sub2/small_321.ppm
+./sub2/small_322.ppm
+./sub2/small_323.ppm
+./sub2/small_324.ppm
+./sub2/small_325.ppm
+./sub2/small_326.ppm
+./sub2/small_327.ppm
+./sub2/small_328.ppm
+./sub2/small_329.ppm
+./sub2/small_330.ppm
+./sub2/small_331.ppm
+./sub2/small_332.ppm
+./sub2/small_333.ppm
+./sub2/small_334.ppm
+./sub2/small_335.ppm
+./sub2/small_336.ppm
+./sub2/small_337.ppm
+./sub2/small_338.ppm
+./sub2/small_339.ppm
+./sub2/small_340.ppm
+./sub2/small_341.ppm
+./sub2/small_342.ppm
+./sub2/small_343.ppm
+./sub2/small_344.ppm
+./sub2/small_345.ppm
+./sub2/small_346.ppm
+./sub2/small_347.ppm
+./sub2/small_348.ppm
+./sub3/small_017.ppm
+./sub3/small_018.ppm
+./sub3/small_019.ppm
+./sub3/small_020.ppm
+./sub3/small_021.ppm
+./sub3/small_022.ppm
+./sub3/small_023.ppm
+./sub3/small_030.ppm
+./sub3/small_031.ppm
+./sub3/small_032.ppm
+./sub3/small_033.ppm
+./sub3/small_034.ppm
+./sub3/small_035.ppm
+./sub3/small_036.ppm
+./sub3/small_037.ppm
+./sub3/small_038.ppm
+./sub3/small_039.ppm
+./sub3/small_040.ppm
+./sub3/small_041.ppm
+./sub3/small_042.ppm
+./sub3/small_043.ppm
+./sub3/small_044.ppm
+./sub3/small_045.ppm
+./sub3/small_046.ppm
+./sub3/small_047.ppm
+./sub3/small_048.ppm
+./sub3/small_049.ppm
+./sub3/small_050.ppm
+./sub3/small_051.ppm
+./sub3/small_052.ppm
+./sub3/small_053.ppm
+./sub3/small_054.ppm
+./sub3/small_055.ppm
+./sub3/small_056.ppm
+./sub3/small_057.ppm
+./sub3/small_058.ppm
+./sub3/small_059.ppm
+./sub3/small_060.ppm
+./sub3/small_061.ppm
+./sub3/small_062.ppm
+./sub3/small_063.ppm
+./sub3/small_064.ppm
+./sub3/small_065.ppm
+./sub3/small_066.ppm
+./sub3/small_067.ppm
+./sub3/small_068.ppm
+./sub3/small_069.ppm
+./sub3/small_070.ppm
+./sub3/small_071.ppm
+./sub3/small_072.ppm
+./sub3/small_073.ppm
+./sub3/small_074.ppm
+./sub3/small_075.ppm
+./sub3/small_076.ppm
+./sub3/small_077.ppm
+./sub3/small_078.ppm
+./sub3/small_079.ppm
+./sub3/small_080.ppm
+./sub3/small_081.ppm
+./sub3/small_082.ppm
+./sub3/small_083.ppm
+./sub3/small_084.ppm
+./sub3/small_085.ppm
+./sub3/small_086.ppm
+./sub3/small_087.ppm
+./sub3/small_088.ppm
+./sub3/small_089.ppm
+./sub3/small_090.ppm
+./sub3/small_091.ppm
+./sub3/small_092.ppm
+./sub3/small_093.ppm
+./sub3/small_094.ppm
+./sub3/small_095.ppm
+./sub3/small_096.ppm
+./sub3/small_097.ppm
+./sub3/small_098.ppm
+./sub3/small_099.ppm
+./sub3/small_100.ppm
+./sub3/small_101.ppm
+./sub3/small_102.ppm
+./sub3/small_103.ppm
+./sub3/small_104.ppm
+./sub3/small_105.ppm
+./sub3/small_106.ppm
+./sub3/small_107.ppm
+./sub3/small_108.ppm
+./sub3/small_109.ppm
+./sub3/small_110.ppm
+./sub3/small_111.ppm
+./sub3/small_112.ppm
+./sub3/small_113.ppm
+./sub3/small_114.ppm
+./sub3/small_115.ppm
+./sub3/small_116.ppm
+./sub3/small_117.ppm
+./sub3/small_118.ppm
+./sub3/small_119.ppm
+./sub3/small_120.ppm
+./sub3/small_121.ppm
+./sub3/small_122.ppm
+./sub3/small_123.ppm
+./sub3/small_124.ppm
+./sub3/small_125.ppm
+./sub3/small_126.ppm
+./sub3/small_127.ppm
+./sub3/small_128.ppm
+./sub3/small_129.ppm
+./sub3/small_130.ppm
+./sub3/small_131.ppm
+./sub3/small_132.ppm
+./sub3/small_133.ppm
+./sub3/small_134.ppm
+./sub3/small_135.ppm
+./sub3/small_136.ppm
+./sub3/small_137.ppm
+./sub3/small_138.ppm
+./sub3/small_139.ppm
+./sub3/small_140.ppm
+./sub3/small_141.ppm
+./sub3/small_142.ppm
+./sub3/small_143.ppm
+./sub3/small_144.ppm
+./sub3/small_145.ppm
+./sub3/small_146.ppm
+./sub3/small_147.ppm
+./sub3/small_148.ppm
+./sub3/small_149.ppm
+./sub3/small_150.ppm
+./sub3/small_151.ppm
+./sub3/small_152.ppm
+./sub3/small_153.ppm
+./sub3/small_154.ppm
+./sub3/small_155.ppm
+./sub3/small_156.ppm
+./sub3/small_157.ppm
+./sub3/small_158.ppm
+./sub3/small_159.ppm
+./sub3/small_160.ppm
+./sub3/small_161.ppm
+./sub3/small_162.ppm
+./sub3/small_163.ppm
+./sub3/small_164.ppm
+./sub3/small_165.ppm
+./sub3/small_166.ppm
+./sub3/small_167.ppm
+./sub3/small_168.ppm
+./sub3/small_169.ppm
+./sub3/small_170.ppm
+./sub3/small_171.ppm
+./sub4/small_024.ppm
+./sub4/small_025.ppm
+./sub4/small_026.ppm
+./sub4/small_027.ppm
+./sub4/small_028.ppm
+./sub4/small_029.ppm
+./sub4/small_465.ppm
+./sub4/small_466.ppm
+./sub4/small_467.ppm
+./sub4/small_468.ppm
+./sub4/small_469.ppm
+./sub4/small_470.ppm
+./sub4/small_471.ppm
+./sub4/small_472.ppm
+./sub4/small_473.ppm
+./sub4/small_474.ppm
+./sub4/small_475.ppm
+./sub4/small_476.ppm
+./sub4/small_477.ppm
+./sub4/small_478.ppm
+The most similar image is ./sub4/small_466.ppm with a distance of 1.562500
+[SUCCESS]: [CASE]: many_small_pics
+
+[INFO]: Testing with mixed_valid_invalid_image and expecting: Basket_018.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/mixed_valid_invalid_image ../A3_testcases//source_images/mixed_valid_invalid_image.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/.DS_Store
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_000.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_001.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_002.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_007.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_015.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_016.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_017.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_018.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_019.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_008.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_009.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_010.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_011.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_012.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_013.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_014.ppm
+../A3_testcases/mixed_valid_invalid_image/sub3/Basket_003.ppm
+../A3_testcases/mixed_valid_invalid_image/sub3/Basket_004.ppm
+../A3_testcases/mixed_valid_invalid_image/sub3/Basket_005.ppm
+../A3_testcases/mixed_valid_invalid_image/sub3/Basket_006.ppm
+The most similar image is ../A3_testcases/mixed_valid_invalid_image/sub/Basket_018.ppm with a distance of 3.863884
+[SUCCESS]: [CASE]: mixed_valid_invalid_image
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s one_process ../source_images/mixed_valid_invalid_image.ppm
+./sub/.DS_Store
+./sub/Basket_000.ppm
+./sub/Basket_001.ppm
+./sub/Basket_002.ppm
+./sub/Basket_007.ppm
+./sub/Basket_015.ppm
+./sub/Basket_016.ppm
+./sub/Basket_017.ppm
+./sub/Basket_018.ppm
+./sub/Basket_019.ppm
+./sub2/Basket_008.ppm
+./sub2/Basket_009.ppm
+./sub2/Basket_010.ppm
+./sub2/Basket_011.ppm
+./sub2/Basket_012.ppm
+./sub2/Basket_013.ppm
+./sub2/Basket_014.ppm
+./sub3/Basket_003.ppm
+./sub3/Basket_004.ppm
+./sub3/Basket_005.ppm
+./sub3/Basket_006.ppm
+The most similar image is ./sub/Basket_018.ppm with a distance of 3.863884
+[SUCCESS]: [CASE]: mixed_valid_invalid_image
+
+[INFO]: Testing with non_ppm_image and expecting: No output or atleast program should not crash
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/non_ppm_image ../A3_testcases//source_images/non_ppm_image.ppm
+../A3_testcases/non_ppm_image/subfolder/basket_70.ppm
+../A3_testcases/non_ppm_image/subfolder/big_table_70.txt
+../A3_testcases/non_ppm_image/subfolder/black_buck_70.ppm
+../A3_testcases/non_ppm_image/subfolder/giraffe_70.jpg
+../A3_testcases/non_ppm_image/subfolder/small_70.ppm
+../A3_testcases/non_ppm_image/subfolder/table_70.ppm
+../A3_testcases/non_ppm_image/subfolder/whale_70.ppm
+The most similar image is  with a distance of 340282346638528859811704183484516925440.000000
+[SUCCESS]: [CASE]: non_ppm_image
+
+[INFO]: Testing with no_similar_images and expecting: basket_chopped.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/no_similar_images ../A3_testcases//source_images/no_similar_images.ppm
+../A3_testcases/no_similar_images/subfolder/.DS_Store
+../A3_testcases/no_similar_images/subfolder/basket_chopped.ppm
+../A3_testcases/no_similar_images/subfolder/big_table_chopped.ppm
+../A3_testcases/no_similar_images/subfolder/whale_cropped.ppm
+The most similar image is ../A3_testcases/no_similar_images/subfolder/basket_chopped.ppm with a distance of 118.488029
+[SUCCESS]: [CASE]: no_similar_images
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s one_process ../source_images/no_similar_images.ppm
+./subfolder/.DS_Store
+./subfolder/basket_chopped.ppm
+./subfolder/big_table_chopped.ppm
+./subfolder/whale_cropped.ppm
+The most similar image is ./subfolder/basket_chopped.ppm with a distance of 118.488029
+[SUCCESS]: [CASE]: no_similar_images
+
+[INFO]: Testing with no_sub_folder and expecting: No output or atleast program should not crash
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/no_sub_folder ../A3_testcases//source_images/no_sub_folder.ppm
+The most similar image is  with a distance of 340282346638528859811704183484516925440.000000
+[SUCCESS]: [CASE]: no_sub_folder
+
+[INFO]: Testing with similar_images_multiple_small and expecting any of: small_02.ppm, small_dis13_1.ppm, small_dis13_2.ppm, small_dis13_3.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/similar_images_multiple_small ../A3_testcases//source_images/similar_images_multiple_small.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_00.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_01.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_02.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_03.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_04.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_05.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_06.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_07.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_08.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_09.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_dis13_1.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_dis13_2.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_dis13_3.ppm
+The most similar image is ../A3_testcases/similar_images_multiple_small/subfolder/small_02.ppm with a distance of 0.812500
+[SUCCESS]: [CASE]: similar_images_multiple_small
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s one_process ../source_images/similar_images_multiple_small.ppm
+./subfolder/small_00.ppm
+./subfolder/small_01.ppm
+./subfolder/small_02.ppm
+./subfolder/small_03.ppm
+./subfolder/small_04.ppm
+./subfolder/small_05.ppm
+./subfolder/small_06.ppm
+./subfolder/small_07.ppm
+./subfolder/small_08.ppm
+./subfolder/small_09.ppm
+./subfolder/small_dis13_1.ppm
+./subfolder/small_dis13_2.ppm
+./subfolder/small_dis13_3.ppm
+The most similar image is ./subfolder/small_02.ppm with a distance of 0.812500
+[SUCCESS]: [CASE]: similar_images_multiple_small
+
+[INFO]: Testing with similar_images_unique_large and expecting: whale_00.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/similar_images_unique_large ../A3_testcases//source_images/similar_images_unique_large.ppm
+../A3_testcases/similar_images_unique_large/subfolder/whale_00.ppm
+../A3_testcases/similar_images_unique_large/subfolder/whale_01.ppm
+../A3_testcases/similar_images_unique_large/subfolder/whale_02.ppm
+../A3_testcases/similar_images_unique_large/subfolder/whale_03.ppm
+../A3_testcases/similar_images_unique_large/subfolder/whale_04.ppm
+The most similar image is ../A3_testcases/similar_images_unique_large/subfolder/whale_00.ppm with a distance of 0.005431
+[SUCCESS]: [CASE]: similar_images_unique_large
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s one_process ../source_images/similar_images_unique_large.ppm
+./subfolder/whale_00.ppm
+./subfolder/whale_01.ppm
+./subfolder/whale_02.ppm
+./subfolder/whale_03.ppm
+./subfolder/whale_04.ppm
+The most similar image is ./subfolder/whale_00.ppm with a distance of 0.005431
+[SUCCESS]: [CASE]: similar_images_unique_large
+
+[INFO]: Testing with similar_images_unique_small and expecting: small_05.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/similar_images_unique_small ../A3_testcases//source_images/similar_images_unique_small.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_00.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_01.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_02.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_03.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_04.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_05.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_06.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_07.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_08.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_09.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_10.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_11.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_12.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_13.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_14.ppm
+The most similar image is ../A3_testcases/similar_images_unique_small/to_compare/small_05.ppm with a distance of 0.437500
+[SUCCESS]: [CASE]: similar_images_unique_small
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s one_process ../source_images/similar_images_unique_small.ppm
+./to_compare/small_00.ppm
+./to_compare/small_01.ppm
+./to_compare/small_02.ppm
+./to_compare/small_03.ppm
+./to_compare/small_04.ppm
+./to_compare/small_05.ppm
+./to_compare/small_06.ppm
+./to_compare/small_07.ppm
+./to_compare/small_08.ppm
+./to_compare/small_09.ppm
+./to_compare/small_10.ppm
+./to_compare/small_11.ppm
+./to_compare/small_12.ppm
+./to_compare/small_13.ppm
+./to_compare/small_14.ppm
+The most similar image is ./to_compare/small_05.ppm with a distance of 0.437500
+[SUCCESS]: [CASE]: similar_images_unique_small
+
+[INFO]: Testing with similar_images_with_diff_size and expecting: No output or atleast program should not crash
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/similar_images_with_diff_size ../A3_testcases//source_images/similar_images_with_diff_size.ppm
+../A3_testcases/similar_images_with_diff_size/subfolder/black_buck_00_cropped.ppm
+../A3_testcases/similar_images_with_diff_size/subfolder/black_buck_01_cropped.ppm
+../A3_testcases/similar_images_with_diff_size/subfolder/black_buck_02_cropped.ppm
+../A3_testcases/similar_images_with_diff_size/subfolder/black_buck_03_cropped.ppm
+The most similar image is  with a distance of 340282346638528859811704183484516925440.000000
+[SUCCESS]: [CASE]: similar_images_with_diff_size
+
+[INFO]: Testing with valid_ppm_with_non_ppm_suffix and expecting: basket_01.jpg
+[INFO]: Testing with -d option
+Invoking: timeout 30s one_process -d ../A3_testcases/valid_ppm_with_non_ppm_suffix ../A3_testcases//source_images/valid_ppm_with_non_ppm_suffix.ppm
+../A3_testcases/valid_ppm_with_non_ppm_suffix/sub/basket_00.txt
+../A3_testcases/valid_ppm_with_non_ppm_suffix/sub/basket_01.jpg
+../A3_testcases/valid_ppm_with_non_ppm_suffix/sub/basket_02.png
+The most similar image is ../A3_testcases/valid_ppm_with_non_ppm_suffix/sub/basket_01.jpg with a distance of 2.201077
+[INFO]: Testing distance for valid_ppm_with_non_ppm_suffix and expecting: 2.201077
+[SUCCESS]: [CASE]: distance for valid_ppm_with_non_ppm_suffix
+[SUCCESS]: [CASE]: valid_ppm_with_non_ppm_suffix
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s one_process ../source_images/valid_ppm_with_non_ppm_suffix.ppm
+./sub/basket_00.txt
+./sub/basket_01.jpg
+./sub/basket_02.png
+The most similar image is ./sub/basket_01.jpg with a distance of 2.201077
+[INFO]: Testing distance for valid_ppm_with_non_ppm_suffix and expecting: 2.201077
+[SUCCESS]: [CASE]: distance for valid_ppm_with_non_ppm_suffix
+[SUCCESS]: [CASE]: valid_ppm_with_non_ppm_suffix
+
+============Testing image_retrieval==============
+[INFO]: Testing with actual_same_image and expecting: big_table_chopped.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/actual_same_image ../A3_testcases//source_images/actual_same_image.ppm
+Processing all images in directory: ../A3_testcases/actual_same_image/subfolder 
+../A3_testcases/actual_same_image/subfolder/.DS_Store
+../A3_testcases/actual_same_image/subfolder/basket_70.ppm
+../A3_testcases/actual_same_image/subfolder/basket_chopped.ppm
+../A3_testcases/actual_same_image/subfolder/big_table_70.ppm
+../A3_testcases/actual_same_image/subfolder/big_table_chopped.ppm
+../A3_testcases/actual_same_image/subfolder/black_buck_70.ppm
+Processing all images in directory: ../A3_testcases/actual_same_image/subfolder2 
+../A3_testcases/actual_same_image/subfolder2/giraffe_70.ppm
+../A3_testcases/actual_same_image/subfolder2/small_70.ppm
+../A3_testcases/actual_same_image/subfolder2/table_70.ppm
+../A3_testcases/actual_same_image/subfolder2/whale_70.ppm
+../A3_testcases/actual_same_image/subfolder2/whale_cropped.ppm
+The most similar image is ../A3_testcases/actual_same_image/subfolder/big_table_chopped.ppm with a distance of 0.000000
+[INFO]: Testing distance for actual_same_image and expecting: 0.000000
+[SUCCESS]: [CASE]: distance for actual_same_image
+[SUCCESS]: [CASE]: actual_same_image
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s image_retrieval ../source_images/actual_same_image.ppm
+Processing all images in directory: ./subfolder 
+./subfolder/.DS_Store
+./subfolder/basket_70.ppm
+./subfolder/basket_chopped.ppm
+./subfolder/big_table_70.ppm
+./subfolder/big_table_chopped.ppm
+./subfolder/black_buck_70.ppm
+Processing all images in directory: ./subfolder2 
+./subfolder2/giraffe_70.ppm
+./subfolder2/small_70.ppm
+./subfolder2/table_70.ppm
+./subfolder2/whale_70.ppm
+./subfolder2/whale_cropped.ppm
+The most similar image is ./subfolder/big_table_chopped.ppm with a distance of 0.000000
+[INFO]: Testing distance for actual_same_image and expecting: 0.000000
+[SUCCESS]: [CASE]: distance for actual_same_image
+[SUCCESS]: [CASE]: actual_same_image
+
+[INFO]: Testing with different_set_similar_images and expecting: table_03_cropped.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/different_set_similar_images ../A3_testcases//source_images/different_set_similar_images.ppm
+Processing all images in directory: ../A3_testcases/different_set_similar_images/set1 
+../A3_testcases/different_set_similar_images/set1/.DS_Store
+../A3_testcases/different_set_similar_images/set1/giraffe_00_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/giraffe_01_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/giraffe_02_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/table_00_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/table_01_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/table_02_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/table_03_cropped.ppm
+../A3_testcases/different_set_similar_images/set1/table_04_cropped.ppm
+The most similar image is ../A3_testcases/different_set_similar_images/set1/table_03_cropped.ppm with a distance of 0.277000
+[SUCCESS]: [CASE]: different_set_similar_images
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s image_retrieval ../source_images/different_set_similar_images.ppm
+Processing all images in directory: ./set1 
+./set1/.DS_Store
+./set1/giraffe_00_cropped.ppm
+./set1/giraffe_01_cropped.ppm
+./set1/giraffe_02_cropped.ppm
+./set1/table_00_cropped.ppm
+./set1/table_01_cropped.ppm
+./set1/table_02_cropped.ppm
+./set1/table_03_cropped.ppm
+./set1/table_04_cropped.ppm
+The most similar image is ./set1/table_03_cropped.ppm with a distance of 0.277000
+[SUCCESS]: [CASE]: different_set_similar_images
+
+[INFO]: Testing with distinct_large_picture and expecting: big_table_cropped.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/distinct_large_picture ../A3_testcases//source_images/distinct_large_picture.ppm
+Processing all images in directory: ../A3_testcases/distinct_large_picture/sub 
+../A3_testcases/distinct_large_picture/sub/.DS_Store
+../A3_testcases/distinct_large_picture/sub/basket_70_cropped.ppm
+../A3_testcases/distinct_large_picture/sub/big_table_cropped.ppm
+../A3_testcases/distinct_large_picture/sub/black_buck_70_cropped.ppm
+../A3_testcases/distinct_large_picture/sub/giraffe_70_cropped.ppm
+../A3_testcases/distinct_large_picture/sub/whale_70_cropped.ppm
+The most similar image is ../A3_testcases/distinct_large_picture/sub/big_table_cropped.ppm with a distance of 122.558945
+[INFO]: Testing distance for distinct_large_picture and expecting: 122.558945
+[SUCCESS]: [CASE]: distance for distinct_large_picture
+[SUCCESS]: [CASE]: distinct_large_picture
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s image_retrieval ../source_images/distinct_large_picture.ppm
+Processing all images in directory: ./sub 
+./sub/.DS_Store
+./sub/basket_70_cropped.ppm
+./sub/big_table_cropped.ppm
+./sub/black_buck_70_cropped.ppm
+./sub/giraffe_70_cropped.ppm
+./sub/whale_70_cropped.ppm
+The most similar image is ./sub/big_table_cropped.ppm with a distance of 122.558945
+[INFO]: Testing distance for distinct_large_picture and expecting: 122.558945
+[SUCCESS]: [CASE]: distance for distinct_large_picture
+[SUCCESS]: [CASE]: distinct_large_picture
+
+[INFO]: Testing with many_small_pics and expecting: small_466.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/many_small_pics ../A3_testcases//source_images/many_small_pics.ppm
+Processing all images in directory: ../A3_testcases/many_small_pics/sub4 
+../A3_testcases/many_small_pics/sub4/small_024.ppm
+../A3_testcases/many_small_pics/sub4/small_025.ppm
+../A3_testcases/many_small_pics/sub4/small_026.ppm
+../A3_testcases/many_small_pics/sub4/small_027.ppm
+../A3_testcases/many_small_pics/sub4/small_028.ppm
+../A3_testcases/many_small_pics/sub4/small_029.ppm
+../A3_testcases/many_small_pics/sub4/small_465.ppm
+../A3_testcases/many_small_pics/sub4/small_466.ppm
+../A3_testcases/many_small_pics/sub4/small_467.ppm
+../A3_testcases/many_small_pics/sub4/small_468.ppm
+../A3_testcases/many_small_pics/sub4/small_469.ppm
+../A3_testcases/many_small_pics/sub4/small_470.ppm
+../A3_testcases/many_small_pics/sub4/small_471.ppm
+../A3_testcases/many_small_pics/sub4/small_472.ppm
+../A3_testcases/many_small_pics/sub4/small_473.ppm
+../A3_testcases/many_small_pics/sub4/small_474.ppm
+../A3_testcases/many_small_pics/sub4/small_475.ppm
+../A3_testcases/many_small_pics/sub4/small_476.ppm
+../A3_testcases/many_small_pics/sub4/small_477.ppm
+../A3_testcases/many_small_pics/sub4/small_478.ppm
+Processing all images in directory: ../A3_testcases/many_small_pics/sub1 
+../A3_testcases/many_small_pics/sub1/.DS_Store
+../A3_testcases/many_small_pics/sub1/small_000.ppm
+../A3_testcases/many_small_pics/sub1/small_001.ppm
+../A3_testcases/many_small_pics/sub1/small_016.ppm
+../A3_testcases/many_small_pics/sub1/small_172.ppm
+../A3_testcases/many_small_pics/sub1/small_173.ppm
+../A3_testcases/many_small_pics/sub1/small_174.ppm
+../A3_testcases/many_small_pics/sub1/small_175.ppm
+../A3_testcases/many_small_pics/sub1/small_176.ppm
+../A3_testcases/many_small_pics/sub1/small_177.ppm
+../A3_testcases/many_small_pics/sub1/small_178.ppm
+../A3_testcases/many_small_pics/sub1/small_179.ppm
+../A3_testcases/many_small_pics/sub1/small_180.ppm
+../A3_testcases/many_small_pics/sub1/small_181.ppm
+../A3_testcases/many_small_pics/sub1/small_182.ppm
+../A3_testcases/many_small_pics/sub1/small_183.ppm
+../A3_testcases/many_small_pics/sub1/small_184.ppm
+../A3_testcases/many_small_pics/sub1/small_185.ppm
+../A3_testcases/many_small_pics/sub1/small_186.ppm
+../A3_testcases/many_small_pics/sub1/small_187.ppm
+../A3_testcases/many_small_pics/sub1/small_188.ppm
+../A3_testcases/many_small_pics/sub1/small_189.ppm
+../A3_testcases/many_small_pics/sub1/small_190.ppm
+../A3_testcases/many_small_pics/sub1/small_191.ppm
+../A3_testcases/many_small_pics/sub1/small_192.ppm
+../A3_testcases/many_small_pics/sub1/small_193.ppm
+../A3_testcases/many_small_pics/sub1/small_194.ppm
+../A3_testcases/many_small_pics/sub1/small_195.ppm
+../A3_testcases/many_small_pics/sub1/small_196.ppm
+../A3_testcases/many_small_pics/sub1/small_197.ppm
+../A3_testcases/many_small_pics/sub1/small_198.ppm
+../A3_testcases/many_small_pics/sub1/small_199.ppm
+../A3_testcases/many_small_pics/sub1/small_200.ppm
+../A3_testcases/many_small_pics/sub1/small_201.ppm
+../A3_testcases/many_small_pics/sub1/small_202.ppm
+../A3_testcases/many_small_pics/sub1/small_203.ppm
+../A3_testcases/many_small_pics/sub1/small_204.ppm
+../A3_testcases/many_small_pics/sub1/small_205.ppm
+../A3_testcases/many_small_pics/sub1/small_206.ppm
+../A3_testcases/many_small_pics/sub1/small_207.ppm
+../A3_testcases/many_small_pics/sub1/small_208.ppm
+../A3_testcases/many_small_pics/sub1/small_209.ppm
+../A3_testcases/many_small_pics/sub1/small_210.ppm
+../A3_testcases/many_small_pics/sub1/small_211.ppm
+../A3_testcases/many_small_pics/sub1/small_212.ppm
+../A3_testcases/many_small_pics/sub1/small_213.ppm
+../A3_testcases/many_small_pics/sub1/small_214.ppm
+../A3_testcases/many_small_pics/sub1/small_215.ppm
+../A3_testcases/many_small_pics/sub1/small_349.ppm
+../A3_testcases/many_small_pics/sub1/small_350.ppm
+../A3_testcases/many_small_pics/sub1/small_351.ppm
+../A3_testcases/many_small_pics/sub1/small_352.ppm
+../A3_testcases/many_small_pics/sub1/small_353.ppm
+../A3_testcases/many_small_pics/sub1/small_354.ppm
+../A3_testcases/many_small_pics/sub1/small_355.ppm
+../A3_testcases/many_small_pics/sub1/small_356.ppm
+../A3_testcases/many_small_pics/sub1/small_357.ppm
+../A3_testcases/many_small_pics/sub1/small_358.ppm
+../A3_testcases/many_small_pics/sub1/small_359.ppm
+../A3_testcases/many_small_pics/sub1/small_360.ppm
+../A3_testcases/many_small_pics/sub1/small_361.ppm
+../A3_testcases/many_small_pics/sub1/small_362.ppm
+../A3_testcases/many_small_pics/sub1/small_363.ppm
+../A3_testcases/many_small_pics/sub1/small_364.ppm
+../A3_testcases/many_small_pics/sub1/small_365.ppm
+../A3_testcases/many_small_pics/sub1/small_366.ppm
+../A3_testcases/many_small_pics/sub1/small_367.ppm
+../A3_testcases/many_small_pics/sub1/small_368.ppm
+../A3_testcases/many_small_pics/sub1/small_369.ppm
+../A3_testcases/many_small_pics/sub1/small_370.ppm
+../A3_testcases/many_small_pics/sub1/small_371.ppm
+../A3_testcases/many_small_pics/sub1/small_372.ppm
+../A3_testcases/many_small_pics/sub1/small_373.ppm
+../A3_testcases/many_small_pics/sub1/small_374.ppm
+../A3_testcases/many_small_pics/sub1/small_375.ppm
+../A3_testcases/many_small_pics/sub1/small_376.ppm
+../A3_testcases/many_small_pics/sub1/small_377.ppm
+../A3_testcases/many_small_pics/sub1/small_378.ppm
+../A3_testcases/many_small_pics/sub1/small_379.pProcessing all images in directory: ../A3_testcases/many_small_pics/sub3 
+../A3_testcases/many_small_pics/sub3/small_017.ppm
+../A3_testcases/many_small_pics/sub3/small_018.ppm
+../A3_testcases/many_small_pics/sub3/small_019.ppm
+../A3_testcases/many_small_pics/sub3/small_020.ppm
+../A3_testcases/many_small_pics/sub3/small_021.ppm
+../A3_testcases/many_small_pics/sub3/small_022.ppm
+../A3_testcases/many_small_pics/sub3/small_023.ppm
+../A3_testcases/many_small_pics/sub3/small_030.ppm
+../A3_testcases/many_small_pics/sub3/small_031.ppm
+../A3_testcases/many_small_pics/sub3/small_032.ppm
+../A3_testcases/many_small_pics/sub3/small_033.ppm
+../A3_testcases/many_small_pics/sub3/small_034.ppm
+../A3_testcases/many_small_pics/sub3/small_035.ppm
+../A3_testcases/many_small_pics/sub3/small_036.ppm
+../A3_testcases/many_small_pics/sub3/small_037.ppm
+../A3_testcases/many_small_pics/sub3/small_038.ppm
+../A3_testcases/many_small_pics/sub3/small_039.ppm
+../A3_testcases/many_small_pics/sub3/small_040.ppm
+../A3_testcases/many_small_pics/sub3/small_041.ppm
+../A3_testcases/many_small_pics/sub3/small_042.ppm
+../A3_testcases/many_small_pics/sub3/small_043.ppm
+../A3_testcases/many_small_pics/sub3/small_044.ppm
+../A3_testcases/many_small_pics/sub3/small_045.ppm
+../A3_testcases/many_small_pics/sub3/small_046.ppm
+../A3_testcases/many_small_pics/sub3/small_047.ppm
+../A3_testcases/many_small_pics/sub3/small_048.ppm
+../A3_testcases/many_small_pics/sub3/small_049.ppm
+../A3_testcases/many_small_pics/sub3/small_050.ppm
+../A3_testcases/many_small_pics/sub3/small_051.ppm
+../A3_testcases/many_small_pics/sub3/small_052.ppm
+../A3_testcases/many_small_pics/sub3/small_053.ppm
+../A3_testcases/many_small_pics/sub3/small_054.ppm
+../A3_testcases/many_small_pics/sub3/small_055.ppm
+../A3_testcases/many_small_pics/sub3/small_056.ppm
+../A3_testcases/many_small_pics/sub3/small_057.ppm
+../A3_testcases/many_small_pics/sub3/small_058.ppm
+../A3_testcases/many_small_pics/sub3/small_059.ppm
+../A3_testcases/many_small_pics/sub3/small_060.ppm
+../A3_testcases/many_small_pics/sub3/small_061.ppm
+../A3_testcases/many_small_pics/sub3/small_062.ppm
+../A3_testcases/many_small_pics/sub3/small_063.ppm
+../A3_testcases/many_small_pics/sub3/small_064.ppm
+../A3_testcases/many_small_pics/sub3/small_065.ppm
+../A3_testcases/many_small_pics/sub3/small_066.ppm
+../A3_testcases/many_small_pics/sub3/small_067.ppm
+../A3_testcases/many_small_pics/sub3/small_068.ppm
+../A3_testcases/many_small_pics/sub3/small_069.ppm
+../A3_testcases/many_small_pics/sub3/small_070.ppm
+../A3_testcases/many_small_pics/sub3/small_071.ppm
+../A3_testcases/many_small_pics/sub3/small_072.ppm
+../A3_testcases/many_small_pics/sub3/small_073.ppm
+../A3_testcases/many_small_pics/sub3/small_074.ppm
+../A3_testcases/many_small_pics/sub3/small_075.ppm
+../A3_testcases/many_small_pics/sub3/small_076.ppm
+../A3_testcases/many_small_pics/sub3/small_077.ppm
+../A3_testcases/many_small_pics/sub3/small_078.ppm
+../A3_testcases/many_small_pics/sub3/small_079.ppm
+../A3_testcases/many_small_pics/sub3/small_080.ppm
+../A3_testcases/many_small_pics/sub3/small_081.ppm
+../A3_testcases/many_small_pics/sub3/small_082.ppm
+../A3_testcases/many_small_pics/sub3/small_083.ppm
+../A3_testcases/many_small_pics/sub3/small_084.ppm
+../A3_testcases/many_small_pics/sub3/small_085.ppm
+../A3_testcases/many_small_pics/sub3/small_086.ppm
+../A3_testcases/many_small_pics/sub3/small_087.ppm
+../A3_testcases/many_small_pics/sub3/small_088.ppm
+../A3_testcases/many_small_pics/sub3/small_089.ppm
+../A3_testcases/many_small_pics/sub3/small_090.ppm
+../A3_testcases/many_small_pics/sub3/small_091.ppm
+../A3_testcases/many_small_pics/sub3/small_092.ppm
+../A3_testcases/many_small_pics/sub3/small_093.ppm
+../A3_testcases/many_small_pics/sub3/small_094.ppm
+../A3_testcases/many_small_pics/sub3/small_095.ppm
+../A3_testcases/many_small_pics/sub3/small_096.ppm
+../A3_testcases/many_small_pics/sub3/small_097.ppm
+../A3_testcases/many_small_pics/sub3/small_098.ppm
+../A3_testcases/many_small_pics/sub3/small_099.ppm
+../A3_testcases/many_small_pics/sub3/small_100.ppm
+../A3_testcases/many_small_pics/sub3/small_1Processing all images in directory: ../A3_testcases/many_small_pics/sub2 
+../A3_testcases/many_small_pics/sub2/.DS_Store
+../A3_testcases/many_small_pics/sub2/small_002.ppm
+../A3_testcases/many_small_pics/sub2/small_003.ppm
+../A3_testcases/many_small_pics/sub2/small_004.ppm
+../A3_testcases/many_small_pics/sub2/small_005.ppm
+../A3_testcases/many_small_pics/sub2/small_006.ppm
+../A3_testcases/many_small_pics/sub2/small_007.ppm
+../A3_testcases/many_small_pics/sub2/small_008.ppm
+../A3_testcases/many_small_pics/sub2/small_009.ppm
+../A3_testcases/many_small_pics/sub2/small_010.ppm
+../A3_testcases/many_small_pics/sub2/small_011.ppm
+../A3_testcases/many_small_pics/sub2/small_012.ppm
+../A3_testcases/many_small_pics/sub2/small_013.ppm
+../A3_testcases/many_small_pics/sub2/small_014.ppm
+../A3_testcases/many_small_pics/sub2/small_015.ppm
+../A3_testcases/many_small_pics/sub2/small_216.ppm
+../A3_testcases/many_small_pics/sub2/small_217.ppm
+../A3_testcases/many_small_pics/sub2/small_218.ppm
+../A3_testcases/many_small_pics/sub2/small_219.ppm
+../A3_testcases/many_small_pics/sub2/small_220.ppm
+../A3_testcases/many_small_pics/sub2/small_221.ppm
+../A3_testcases/many_small_pics/sub2/small_222.ppm
+../A3_testcases/many_small_pics/sub2/small_223.ppm
+../A3_testcases/many_small_pics/sub2/small_224.ppm
+../A3_testcases/many_small_pics/sub2/small_225.ppm
+../A3_testcases/many_small_pics/sub2/small_226.ppm
+../A3_testcases/many_small_pics/sub2/small_227.ppm
+../A3_testcases/many_small_pics/sub2/small_228.ppm
+../A3_testcases/many_small_pics/sub2/small_229.ppm
+../A3_testcases/many_small_pics/sub2/small_230.ppm
+../A3_testcases/many_small_pics/sub2/small_231.ppm
+../A3_testcases/many_small_pics/sub2/small_232.ppm
+../A3_testcases/many_small_pics/sub2/small_233.ppm
+../A3_testcases/many_small_pics/sub2/small_234.ppm
+../A3_testcases/many_small_pics/sub2/small_235.ppm
+../A3_testcases/many_small_pics/sub2/small_236.ppm
+../A3_testcases/many_small_pics/sub2/small_237.ppm
+../A3_testcases/many_small_pics/sub2/small_238.ppm
+../A3_testcases/many_small_pics/sub2/small_239.ppm
+../A3_testcases/many_small_pics/sub2/small_240.ppm
+../A3_testcases/many_small_pics/sub2/small_241.ppm
+../A3_testcases/many_small_pics/sub2/small_242.ppm
+../A3_testcases/many_small_pics/sub2/small_243.ppm
+../A3_testcases/many_small_pics/sub2/small_244.ppm
+../A3_testcases/many_small_pics/sub2/small_245.ppm
+../A3_testcases/many_small_pics/sub2/small_246.ppm
+../A3_testcases/many_small_pics/sub2/small_247.ppm
+../A3_testcases/many_small_pics/sub2/small_248.ppm
+../A3_testcases/many_small_pics/sub2/small_249.ppm
+../A3_testcases/many_small_pics/sub2/small_250.ppm
+../A3_testcases/many_small_pics/sub2/small_251.ppm
+../A3_testcases/many_small_pics/sub2/small_252.ppm
+../A3_testcases/many_small_pics/sub2/small_253.ppm
+../A3_testcases/many_small_pics/sub2/small_254.ppm
+../A3_testcases/many_small_pics/sub2/small_255.ppm
+../A3_testcases/many_small_pics/sub2/small_256.ppm
+../A3_testcases/many_small_pics/sub2/small_257.ppm
+../A3_testcases/many_small_pics/sub2/small_258.ppm
+../A3_testcases/many_small_pics/sub2/small_259.ppm
+../A3_testcases/many_small_pics/sub2/small_260.ppm
+../A3_testcases/many_small_pics/sub2/small_261.ppm
+../A3_testcases/many_small_pics/sub2/small_262.ppm
+../A3_testcases/many_small_pics/sub2/small_263.ppm
+../A3_testcases/many_small_pics/sub2/small_264.ppm
+../A3_testcases/many_small_pics/sub2/small_265.ppm
+../A3_testcases/many_small_pics/sub2/small_266.ppm
+../A3_testcases/many_small_pics/sub2/small_267.ppm
+../A3_testcases/many_small_pics/sub2/small_268.ppm
+../A3_testcases/many_small_pics/sub2/small_269.ppm
+../A3_testcases/many_small_pics/sub2/small_270.ppm
+../A3_testcases/many_small_pics/sub2/small_271.ppm
+../A3_testcases/many_small_pics/sub2/small_272.ppm
+../A3_testcases/many_small_pics/sub2/small_273.ppm
+../A3_testcases/many_small_pics/sub2/small_274.ppm
+../A3_testcases/many_small_pics/sub2/small_275.ppm
+../A3_testcases/many_small_pics/sub2/small_276.ppm
+../A3_testcases/many_small_pics/sub2/small_277.ppm
+../A3_testcases/many_small_pics/sub2/small_278.ppm
+../A3_testcases/many_small_pics/sub2/small_279.ppm
+../A3_testcases/many_small_pics/sub2/small_280.ppm
+../A3_testcases/many_small_pics/sub2/small_281.ppm
+../A3_testcases/many_small_pics/sub2/small_282.ppm
+../A3_testcases/many_small_pics/sub2/small_283.ppm
+../A3_testcases/many_small_pics/sub2/small_284.ppm
+../A3_testcases/many_small_pics/sub2/small_285.ppm
+../A3_testcases/many_small_pics/sub2/small_286.ppm
+../A3_testcases/many_small_pics/sub2/small_287.ppm
+../A3_testcases/many_small_pics/sub2/small_288.ppm
+../A3_testcases/many_small_pics/sub2/small_289.ppm
+../A3_testcases/many_small_pics/sub2/small_290.ppm
+../A3_testcases/many_small_pics/sub2/small_291.ppm
+../A3_testcases/many_small_pics/sub2/small_292.ppm
+../A3_testcases/many_small_pics/sub2/small_293.ppm
+../A3_testcases/many_small_pics/sub2/small_294.ppm
+../A3_testcases/many_small_pics/sub2/small_295.ppm
+../A3_testcases/many_small_pics/sub2/small_296.ppm
+../A3_testcases/many_small_pics/sub2/small_297.ppm
+../A3_testcases/many_small_pics/sub2/small_298.ppm
+../A3_testcases/many_small_pics/sub2/small_299.ppm
+../A3_testcases/many_small_pics/sub2/small_300.ppm
+../A3_testcases/many_small_pics/sub2/small_301.ppm
+../A3_testcases/many_small_pics/sub2/small_302.ppm
+../A3_testcases/many_small_pics/sub2/small_303.ppm
+../A3_testcases/many_small_pics/sub2/small_304.ppm
+../A3_testcases/many_small_pics/sub2/small_305.ppm
+../A3_testcases/many_small_pics/sub2/small_306.ppm
+../A3_testcases/many_small_pics/sub2/small_307.ppm
+../A3_testcases/many_small_pics/sub2/small_308.ppm
+../A3_testcases/many_small_pics/sub2/small_309.ppm
+../A3_testcases/many_small_pics/sub2/small_310.ppm
+../A3_testcases/many_small_pics/sub2/small_311.ppm
+../A3_testcases/many_small_pics/sub2/small_312.ppm
+../A3_testcases/many_small_pics/sub2/small_313.ppm
+../A3_testcases/many_small_pics/sub2/small_314.ppm
+../A3_testcases/many_small_pics/sub2/small_315.ppm
+../A3_testcases/many_small_pics/sub2/small_316.ppm
+../A3_testcases/many_small_pics/sub2/small_317.ppm
+../A3_testcases/many_small_pics/sub2/small_318.ppm
+../A3_testcases/many_small_pics/sub2/small_319.ppm
+../A3_testcases/many_small_pics/sub2/small_320.ppm
+../A3_testcases/many_small_pics/sub2/small_321.ppm
+../A3_testcases/many_small_pics/sub2/small_322.ppm
+../A3_testcases/many_small_pics/sub2/small_323.ppm
+../A3_testcases/many_small_pics/sub2/small_324.ppm
+../A3_testcases/many_small_pics/sub2/small_325.ppm
+../A3_testcases/many_small_pics/sub2/small_326.ppm
+../A3_testcases/many_small_pics/sub2/small_327.ppm
+../A3_testcases/many_small_pics/sub2/small_328.ppm
+../A3_testcases/many_small_pics/sub2/small_329.ppm
+../A3_testcases/many_small_pics/sub2/small_330.ppm
+../A3_testcases/many_small_pics/sub2/small_331.ppm
+../A3_testcases/many_small_pics/sub2/small_332.ppm
+../A3_testcases/many_small_pics/sub2/small_333.ppm
+../A3_testcases/many_small_pics/sub2/small_334.ppm
+../A3_testcases/many_small_pics/sub2/small_335.ppm
+../A3_testcases/many_small_pics/sub2/small_336.ppm
+../A3_testcases/many_small_pics/sub2/small_337.ppm
+../A3_testcases/many_small_pics/sub2/small_338.ppm
+../A3_testcases/many_small_pics/sub2/small_339.ppm
+../A3_testcases/many_small_pics/sub2/small_340.ppm
+../A3_testcases/many_small_pics/sub2/small_341.ppm
+../A3_testcases/many_small_pics/sub2/small_342.ppm
+../A3_testcases/many_small_pics/sub2/small_343.ppm
+../A3_testcases/many_small_pics/sub2/small_344.ppm
+../A3_testcases/many_small_pics/sub2/small_345.ppm
+../A3_testcases/many_small_pics/sub2/small_346.ppm
+../A3_testcases/many_small_pics/sub2/small_347.ppm
+../A3_testcases/many_small_pics/sub2/small_348.ppm
+01.ppm
+../A3_testcases/many_small_pics/sub3/small_102.ppm
+../A3_testcases/many_small_pics/sub3/small_103.ppm
+../A3_testcases/many_small_pics/sub3/small_104.ppm
+../A3_testcases/many_small_pics/sub3/small_105.ppm
+../A3_testcases/many_small_pics/sub3/small_106.ppm
+../A3_testcases/many_small_pics/sub3/small_107.ppm
+../A3_testcases/many_small_pics/sub3/small_108.ppm
+../A3_testcases/many_small_pics/sub3/small_109.ppm
+../A3_testcases/many_small_pics/sub3/small_110.ppm
+../A3_testcases/many_small_pics/sub3/small_111.ppm
+../A3_testcases/many_small_pics/sub3/small_112.ppm
+../A3_testcases/many_small_pics/sub3/small_113.ppm
+../A3_testcases/many_small_pics/sub3/small_114.ppm
+../A3_testcases/many_small_pics/sub3/small_115.ppm
+../A3_testcases/many_small_pics/sub3/small_116.ppm
+../A3_testcases/many_small_pics/sub3/small_117.ppm
+../A3_testcases/many_small_pics/sub3/small_118.ppm
+../A3_testcases/many_small_pics/sub3/small_119.ppm
+../A3_testcases/many_small_pics/sub3/small_120.ppm
+../A3_testcases/many_small_pics/sub3/small_121.ppm
+../A3_testcases/many_small_pics/sub3/small_122.ppm
+../A3_testcases/many_small_pics/sub3/small_123.ppm
+../A3_testcases/many_small_pics/sub3/small_124.ppm
+../A3_testcases/many_small_pics/sub3/small_125.ppm
+../A3_testcases/many_small_pics/sub3/small_126.ppm
+../A3_testcases/many_small_pics/sub3/small_127.ppm
+../A3_testcases/many_small_pics/sub3/small_128.ppm
+../A3_testcases/many_small_pics/sub3/small_129.ppm
+../A3_testcases/many_small_pics/sub3/small_130.ppm
+../A3_testcases/many_small_pics/sub3/small_131.ppm
+../A3_testcases/many_small_pics/sub3/small_132.ppm
+../A3_testcases/many_small_pics/sub3/small_133.ppm
+../A3_testcases/many_small_pics/sub3/small_134.ppm
+../A3_testcases/many_small_pics/sub3/small_135.ppm
+../A3_testcases/many_small_pics/sub3/small_136.ppm
+../A3_testcases/many_small_pics/sub3/small_137.ppm
+../A3_testcases/many_small_pics/sub3/small_138.ppm
+../A3_testcases/many_small_pics/sub3/small_139.ppm
+../A3_testcases/many_small_pics/sub3/small_140.ppm
+../A3_testcases/many_small_pics/sub3/small_141.ppm
+../A3_testcases/many_small_pics/sub3/small_142.ppm
+../A3_testcases/many_small_pics/sub3/small_143.ppm
+../A3_testcases/many_small_pics/sub3/small_144.ppm
+../A3_testcases/many_small_pics/sub3/small_145.ppm
+../A3_testcases/many_small_pics/sub3/small_146.ppm
+../A3_testcases/many_small_pics/sub3/small_147.ppm
+../A3_testcases/many_small_pics/sub3/small_148.ppm
+../A3_testcases/many_small_pics/sub3/small_149.ppm
+../A3_testcases/many_small_pics/sub3/small_150.ppm
+../A3_testcases/many_small_pics/sub3/small_151.ppm
+../A3_testcases/many_small_pics/sub3/small_152.ppm
+../A3_testcases/many_small_pics/sub3/small_153.ppm
+../A3_testcases/many_small_pics/sub3/small_154.ppm
+../A3_testcases/many_small_pics/sub3/small_155.ppm
+../A3_testcases/many_small_pics/sub3/small_156.ppm
+../A3_testcases/many_small_pics/sub3/small_157.ppm
+../A3_testcases/many_small_pics/sub3/small_158.ppm
+../A3_testcases/many_small_pics/sub3/small_159.ppm
+../A3_testcases/many_small_pics/sub3/small_160.ppm
+../A3_testcases/many_small_pics/sub3/small_161.ppm
+../A3_testcases/many_small_pics/sub3/small_162.ppm
+../A3_testcases/many_small_pics/sub3/small_163.ppm
+../A3_testcases/many_small_pics/sub3/small_164.ppm
+../A3_testcases/many_small_pics/sub3/small_165.ppm
+../A3_testcases/many_small_pics/sub3/small_166.ppm
+../A3_testcases/many_small_pics/sub3/small_167.ppm
+../A3_testcases/many_small_pics/sub3/small_168.ppm
+../A3_testcases/many_small_pics/sub3/small_169.ppm
+../A3_testcases/many_small_pics/sub3/small_170.ppm
+../A3_testcases/many_small_pics/sub3/small_171.ppm
+pm
+../A3_testcases/many_small_pics/sub1/small_380.ppm
+../A3_testcases/many_small_pics/sub1/small_381.ppm
+../A3_testcases/many_small_pics/sub1/small_382.ppm
+../A3_testcases/many_small_pics/sub1/small_383.ppm
+../A3_testcases/many_small_pics/sub1/small_384.ppm
+../A3_testcases/many_small_pics/sub1/small_385.ppm
+../A3_testcases/many_small_pics/sub1/small_386.ppm
+../A3_testcases/many_small_pics/sub1/small_387.ppm
+../A3_testcases/many_small_pics/sub1/small_388.ppm
+../A3_testcases/many_small_pics/sub1/small_389.ppm
+../A3_testcases/many_small_pics/sub1/small_390.ppm
+../A3_testcases/many_small_pics/sub1/small_391.ppm
+../A3_testcases/many_small_pics/sub1/small_392.ppm
+../A3_testcases/many_small_pics/sub1/small_393.ppm
+../A3_testcases/many_small_pics/sub1/small_394.ppm
+../A3_testcases/many_small_pics/sub1/small_395.ppm
+../A3_testcases/many_small_pics/sub1/small_396.ppm
+../A3_testcases/many_small_pics/sub1/small_397.ppm
+../A3_testcases/many_small_pics/sub1/small_398.ppm
+../A3_testcases/many_small_pics/sub1/small_399.ppm
+../A3_testcases/many_small_pics/sub1/small_400.ppm
+../A3_testcases/many_small_pics/sub1/small_401.ppm
+../A3_testcases/many_small_pics/sub1/small_402.ppm
+../A3_testcases/many_small_pics/sub1/small_403.ppm
+../A3_testcases/many_small_pics/sub1/small_404.ppm
+../A3_testcases/many_small_pics/sub1/small_405.ppm
+../A3_testcases/many_small_pics/sub1/small_406.ppm
+../A3_testcases/many_small_pics/sub1/small_407.ppm
+../A3_testcases/many_small_pics/sub1/small_408.ppm
+../A3_testcases/many_small_pics/sub1/small_409.ppm
+../A3_testcases/many_small_pics/sub1/small_410.ppm
+../A3_testcases/many_small_pics/sub1/small_411.ppm
+../A3_testcases/many_small_pics/sub1/small_412.ppm
+../A3_testcases/many_small_pics/sub1/small_413.ppm
+../A3_testcases/many_small_pics/sub1/small_414.ppm
+../A3_testcases/many_small_pics/sub1/small_415.ppm
+../A3_testcases/many_small_pics/sub1/small_416.ppm
+../A3_testcases/many_small_pics/sub1/small_417.ppm
+../A3_testcases/many_small_pics/sub1/small_418.ppm
+../A3_testcases/many_small_pics/sub1/small_419.ppm
+../A3_testcases/many_small_pics/sub1/small_420.ppm
+../A3_testcases/many_small_pics/sub1/small_421.ppm
+../A3_testcases/many_small_pics/sub1/small_422.ppm
+../A3_testcases/many_small_pics/sub1/small_423.ppm
+../A3_testcases/many_small_pics/sub1/small_424.ppm
+../A3_testcases/many_small_pics/sub1/small_425.ppm
+../A3_testcases/many_small_pics/sub1/small_426.ppm
+../A3_testcases/many_small_pics/sub1/small_427.ppm
+../A3_testcases/many_small_pics/sub1/small_428.ppm
+../A3_testcases/many_small_pics/sub1/small_429.ppm
+../A3_testcases/many_small_pics/sub1/small_430.ppm
+../A3_testcases/many_small_pics/sub1/small_431.ppm
+../A3_testcases/many_small_pics/sub1/small_432.ppm
+../A3_testcases/many_small_pics/sub1/small_433.ppm
+../A3_testcases/many_small_pics/sub1/small_434.ppm
+../A3_testcases/many_small_pics/sub1/small_435.ppm
+../A3_testcases/many_small_pics/sub1/small_436.ppm
+../A3_testcases/many_small_pics/sub1/small_437.ppm
+../A3_testcases/many_small_pics/sub1/small_438.ppm
+../A3_testcases/many_small_pics/sub1/small_439.ppm
+../A3_testcases/many_small_pics/sub1/small_440.ppm
+../A3_testcases/many_small_pics/sub1/small_441.ppm
+../A3_testcases/many_small_pics/sub1/small_442.ppm
+../A3_testcases/many_small_pics/sub1/small_443.ppm
+../A3_testcases/many_small_pics/sub1/small_444.ppm
+../A3_testcases/many_small_pics/sub1/small_445.ppm
+../A3_testcases/many_small_pics/sub1/small_446.ppm
+../A3_testcases/many_small_pics/sub1/small_447.ppm
+../A3_testcases/many_small_pics/sub1/small_448.ppm
+../A3_testcases/many_small_pics/sub1/small_449.ppm
+../A3_testcases/many_small_pics/sub1/small_450.ppm
+../A3_testcases/many_small_pics/sub1/small_451.ppm
+../A3_testcases/many_small_pics/sub1/small_452.ppm
+../A3_testcases/many_small_pics/sub1/small_453.ppm
+../A3_testcases/many_small_pics/sub1/small_454.ppm
+../A3_testcases/many_small_pics/sub1/small_455.ppm
+../A3_testcases/many_small_pics/sub1/small_456.ppm
+../A3_testcases/many_small_pics/sub1/small_457.ppm
+../A3_testcases/many_small_pics/sub1/small_458.ppm
+../A3_testcases/many_small_pics/sub1/small_459.ppm
+../A3_testcases/many_small_pics/sub1/small_460.ppm
+../A3_testcases/many_small_pics/sub1/small_461.ppm
+../A3_testcases/many_small_pics/sub1/small_462.ppm
+../A3_testcases/many_small_pics/sub1/small_463.ppm
+../A3_testcases/many_small_pics/sub1/small_464.ppm
+../A3_testcases/many_small_pics/sub1/small_479.ppm
+../A3_testcases/many_small_pics/sub1/small_480.ppm
+../A3_testcases/many_small_pics/sub1/small_481.ppm
+../A3_testcases/many_small_pics/sub1/small_482.ppm
+../A3_testcases/many_small_pics/sub1/small_483.ppm
+../A3_testcases/many_small_pics/sub1/small_484.ppm
+../A3_testcases/many_small_pics/sub1/small_485.ppm
+../A3_testcases/many_small_pics/sub1/small_486.ppm
+../A3_testcases/many_small_pics/sub1/small_487.ppm
+../A3_testcases/many_small_pics/sub1/small_488.ppm
+../A3_testcases/many_small_pics/sub1/small_489.ppm
+../A3_testcases/many_small_pics/sub1/small_490.ppm
+../A3_testcases/many_small_pics/sub1/small_491.ppm
+../A3_testcases/many_small_pics/sub1/small_492.ppm
+../A3_testcases/many_small_pics/sub1/small_493.ppm
+../A3_testcases/many_small_pics/sub1/small_494.ppm
+../A3_testcases/many_small_pics/sub1/small_495.ppm
+../A3_testcases/many_small_pics/sub1/small_496.ppm
+../A3_testcases/many_small_pics/sub1/small_497.ppm
+../A3_testcases/many_small_pics/sub1/small_498.ppm
+../A3_testcases/many_small_pics/sub1/small_499.ppm
+The most similar image is ../A3_testcases/many_small_pics/sub4/small_466.ppm with a distance of 1.562500
+[SUCCESS]: [CASE]: many_small_pics
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s image_retrieval ../source_images/many_small_pics.ppm
+Processing all images in directory: ./sub4 
+./sub4/small_024.ppm
+./sub4/small_025.ppm
+./sub4/small_026.ppm
+./sub4/small_027.ppm
+./sub4/small_028.ppm
+./sub4/small_029.ppm
+./sub4/small_465.ppm
+./sub4/small_466.ppm
+./sub4/small_467.ppm
+./sub4/small_468.ppm
+./sub4/small_469.ppm
+./sub4/small_470.ppm
+./sub4/small_471.ppm
+./sub4/small_472.ppm
+./sub4/small_473.ppm
+./sub4/small_474.ppm
+./sub4/small_475.ppm
+./sub4/small_476.ppm
+./sub4/small_477.ppm
+./sub4/small_478.ppm
+Processing all images in directory: ./sub2 
+./sub2/.DS_Store
+./sub2/small_002.ppm
+./sub2/small_003.ppm
+./sub2/small_004.ppm
+./sub2/small_005.ppm
+./sub2/small_006.ppm
+./sub2/small_007.ppm
+./sub2/small_008.ppm
+./sub2/small_009.ppm
+./sub2/small_010.ppm
+./sub2/small_011.ppm
+./sub2/small_012.ppm
+./sub2/small_013.ppm
+./sub2/small_014.ppm
+./sub2/small_015.ppm
+./sub2/small_216.ppm
+./sub2/small_217.ppm
+./sub2/small_218.ppm
+./sub2/small_219.ppm
+./sub2/small_220.ppm
+./sub2/small_221.ppm
+./sub2/small_222.ppm
+./sub2/small_223.ppm
+./sub2/small_224.ppm
+./sub2/small_225.ppm
+./sub2/small_226.ppm
+./sub2/small_227.ppm
+./sub2/small_228.ppm
+./sub2/small_229.ppm
+./sub2/small_230.ppm
+./sub2/small_231.ppm
+./sub2/small_232.ppm
+./sub2/small_233.ppm
+./sub2/small_234.ppm
+./sub2/small_235.ppm
+./sub2/small_236.ppm
+./sub2/small_237.ppm
+./sub2/small_238.ppm
+./sub2/small_239.ppm
+./sub2/small_240.ppm
+./sub2/small_241.ppm
+./sub2/small_242.ppm
+./sub2/small_243.ppm
+./sub2/small_244.ppm
+./sub2/small_245.ppm
+./sub2/small_246.ppm
+./sub2/small_247.ppm
+./sub2/small_248.ppm
+./sub2/small_249.ppm
+./sub2/small_250.ppm
+./sub2/small_251.ppm
+./sub2/small_252.ppm
+./sub2/small_253.ppm
+./sub2/small_254.ppm
+./sub2/small_255.ppm
+./sub2/small_256.ppm
+./sub2/small_257.ppm
+./sub2/small_258.ppm
+./sub2/small_259.ppm
+./sub2/small_260.ppm
+./sub2/small_261.ppm
+./sub2/small_262.ppm
+./sub2/small_263.ppm
+./sub2/small_264.ppm
+./sub2/small_265.ppm
+./sub2/small_266.ppm
+./sub2/small_267.ppm
+./sub2/small_268.ppm
+./sub2/small_269.ppm
+./sub2/small_270.ppm
+./sub2/small_271.ppm
+./sub2/small_272.ppm
+./sub2/small_273.ppm
+./sub2/small_274.ppm
+./sub2/small_275.ppm
+./sub2/small_276.ppm
+./sub2/small_277.ppm
+./sub2/small_278.ppm
+./sub2/small_279.ppm
+./sub2/small_280.ppm
+./sub2/small_281.ppm
+./sub2/small_282.ppm
+./sub2/small_283.ppm
+./sub2/small_284.ppm
+./sub2/small_285.ppm
+./sub2/small_286.ppm
+./sub2/small_287.ppm
+./sub2/small_288.ppm
+./sub2/small_289.ppm
+./sub2/small_290.ppm
+./sub2/small_291.ppm
+./sub2/small_292.ppm
+./sub2/small_293.ppm
+./sub2/small_294.ppm
+./sub2/small_295.ppm
+./sub2/small_296.ppm
+./sub2/small_297.ppm
+./sub2/small_298.ppm
+./sub2/small_299.ppm
+./sub2/small_300.ppm
+./sub2/small_301.ppm
+./sub2/small_302.ppm
+./sub2/small_303.ppm
+./sub2/small_304.ppm
+./sub2/small_305.ppm
+./sub2/small_306.ppm
+./sub2/small_307.ppm
+./sub2/small_308.ppm
+./sub2/small_309.ppm
+./sub2/small_310.ppm
+./sub2/small_311.ppm
+./sub2/small_312.ppm
+./sub2/small_313.ppm
+./sub2/small_314.ppm
+./sub2/small_315.ppm
+./sub2/small_316.ppm
+./sub2/small_317.ppm
+./sub2/small_318.ppm
+./sub2/small_319.ppm
+./sub2/small_320.ppm
+./sub2/small_321.ppm
+./sub2/small_322.ppm
+./sub2/small_323.ppm
+./sub2/small_324.ppm
+./sub2/small_325.ppm
+./sub2/small_326.ppm
+./sub2/small_327.ppm
+./sub2/small_328.ppm
+./sub2/small_329.ppm
+./sub2/small_330.ppm
+./sub2/small_331.ppm
+./sub2/small_332.ppm
+./sub2/small_333.ppm
+./sub2/small_334.ppm
+./sub2/small_335.ppm
+./sub2/small_336.ppm
+./sub2/small_337.ppm
+./sub2/small_338.ppm
+./sub2/small_339.ppm
+./sub2/small_340.ppm
+./sub2/small_341.ppm
+./sub2/small_342.ppm
+./sub2/small_343.ppm
+./sub2/small_344.ppm
+./sub2/small_345.ppm
+./sub2/small_346.ppm
+./sub2/small_347.ppm
+./sub2/small_348.ppm
+Processing all images in directory: ./sub3 
+./sub3/small_017.ppm
+./sub3/small_018.ppm
+./sub3/small_019.ppm
+./sub3/small_020.ppm
+./sub3/small_021.ppm
+./sub3/small_022.ppm
+./sub3/small_023.ppm
+./sub3/small_030.ppm
+./sub3/small_031.ppm
+./sub3/small_032.ppm
+./sub3/small_033.ppm
+./sub3/small_034.ppm
+./sub3/small_035.ppm
+./sub3/small_036.ppm
+./sub3/small_037.ppm
+./sub3/small_038.ppm
+./sub3/small_039.ppm
+./sub3/small_040.ppm
+./sub3/small_041.ppm
+./sub3/small_042.ppm
+./sub3/small_043.ppm
+./sub3/small_044.ppm
+./sub3/small_045.ppm
+./sub3/small_046.ppm
+./sub3/small_047.ppm
+./sub3/small_048.ppm
+./sub3/small_049.ppm
+./sub3/small_050.ppm
+./sub3/small_051.ppm
+./sub3/small_052.ppm
+./sub3/small_053.ppm
+./sub3/small_054.ppm
+./sub3/small_055.ppm
+./sub3/small_056.ppm
+./sub3/small_057.ppm
+./sub3/small_058.ppm
+./sub3/small_059.ppm
+./sub3/small_060.ppm
+./sub3/small_061.ppm
+./sub3/small_062.ppm
+./sub3/small_063.ppm
+./sub3/small_064.ppm
+./sub3/small_065.ppm
+./sub3/small_066.ppm
+./sub3/small_067.ppm
+./sub3/small_068.ppm
+./sub3/small_069.ppm
+./sub3/small_070.ppm
+./sub3/small_071.ppm
+./sub3/small_072.ppm
+./sub3/small_073.ppm
+./sub3/small_074.ppm
+./sub3/small_075.ppm
+./sub3/small_076.ppm
+./sub3/small_077.ppm
+./sub3/small_078.ppm
+./sub3/small_079.ppm
+./sub3/small_080.ppm
+./sub3/small_081.ppm
+./sub3/small_082.ppm
+./sub3/small_083.ppm
+./sub3/small_084.ppm
+./sub3/small_085.ppm
+./sub3/small_086.ppm
+./sub3/small_087.ppm
+./sub3/small_088.ppm
+./sub3/small_089.ppm
+./sub3/small_090.ppm
+./sub3/small_091.ppm
+./sub3/small_092.ppm
+./sub3/small_093.ppm
+./sub3/small_094.ppm
+./sub3/small_095.ppm
+./sub3/small_096.ppm
+./sub3/small_097.ppm
+./sub3/small_098.ppm
+./sub3/small_099.ppm
+./sub3/small_100.ppm
+./sub3/small_101.ppm
+./sub3/small_102.ppm
+./sub3/small_103.ppm
+./sub3/small_104.ppm
+./sub3/small_105.ppm
+./sub3/small_106.ppm
+./sub3/small_107.ppm
+./sub3/small_108.ppm
+./sub3/small_109.ppm
+./sub3/small_110.ppm
+./sub3/small_111.ppm
+./sub3/small_112.ppm
+./sub3/small_113.ppm
+./sub3/small_114.ppm
+./sub3/small_115.ppm
+./sub3/small_116.ppm
+./sub3/small_117.ppm
+./sub3/small_118.ppm
+./sub3/small_119.ppm
+./sub3/small_120.ppm
+./sub3/small_121.ppm
+./sub3/small_122.ppm
+./sub3/small_123.ppm
+./sub3/small_124.ppm
+./sub3/small_125.ppm
+./sub3/small_126.ppm
+./sub3/small_127.ppm
+./sub3/small_128.ppm
+./sub3/small_129.ppm
+./sub3/small_130.ppm
+./sub3/small_131.ppm
+./sub3/small_132.ppm
+./sub3/small_133.ppm
+./sub3/small_134.ppm
+./sub3/small_135.ppm
+./sub3/small_136.ppm
+./sub3/small_137.ppm
+./sub3/small_138.ppm
+./sub3/small_139.ppm
+./sub3/small_140.ppm
+./sub3/small_141.ppm
+./sub3/small_142.ppm
+./sub3/small_143.ppm
+./sub3/small_144.ppm
+./sub3/small_145.ppm
+./sub3/small_146.ppm
+./sub3/small_147.ppm
+./sub3/small_148.ppm
+./sub3/small_149.ppm
+./sub3/small_150.ppm
+./sub3/small_151.ppm
+./sub3/small_152.ppm
+./sub3/small_153.ppm
+./sub3/small_154.ppm
+./sub3/small_155.ppm
+./sub3/small_156.ppm
+./sub3/small_157.ppm
+./sub3/small_158.ppm
+./sub3/small_159.ppm
+./sub3/small_160.ppm
+./sub3/small_161.ppm
+./sub3/small_162.ppm
+./sub3/small_163.ppm
+./sub3/small_164.ppm
+./sub3/small_165.ppm
+./sub3/small_166.ppm
+./sub3/small_167.ppm
+./sub3/small_168.ppm
+./sub3/small_169.ppm
+./sub3/small_170.ppm
+./sub3/small_171.ppm
+Processing all images in directory: ./sub1 
+./sub1/.DS_Store
+./sub1/small_000.ppm
+./sub1/small_001.ppm
+./sub1/small_016.ppm
+./sub1/small_172.ppm
+./sub1/small_173.ppm
+./sub1/small_174.ppm
+./sub1/small_175.ppm
+./sub1/small_176.ppm
+./sub1/small_177.ppm
+./sub1/small_178.ppm
+./sub1/small_179.ppm
+./sub1/small_180.ppm
+./sub1/small_181.ppm
+./sub1/small_182.ppm
+./sub1/small_183.ppm
+./sub1/small_184.ppm
+./sub1/small_185.ppm
+./sub1/small_186.ppm
+./sub1/small_187.ppm
+./sub1/small_188.ppm
+./sub1/small_189.ppm
+./sub1/small_190.ppm
+./sub1/small_191.ppm
+./sub1/small_192.ppm
+./sub1/small_193.ppm
+./sub1/small_194.ppm
+./sub1/small_195.ppm
+./sub1/small_196.ppm
+./sub1/small_197.ppm
+./sub1/small_198.ppm
+./sub1/small_199.ppm
+./sub1/small_200.ppm
+./sub1/small_201.ppm
+./sub1/small_202.ppm
+./sub1/small_203.ppm
+./sub1/small_204.ppm
+./sub1/small_205.ppm
+./sub1/small_206.ppm
+./sub1/small_207.ppm
+./sub1/small_208.ppm
+./sub1/small_209.ppm
+./sub1/small_210.ppm
+./sub1/small_211.ppm
+./sub1/small_212.ppm
+./sub1/small_213.ppm
+./sub1/small_214.ppm
+./sub1/small_215.ppm
+./sub1/small_349.ppm
+./sub1/small_350.ppm
+./sub1/small_351.ppm
+./sub1/small_352.ppm
+./sub1/small_353.ppm
+./sub1/small_354.ppm
+./sub1/small_355.ppm
+./sub1/small_356.ppm
+./sub1/small_357.ppm
+./sub1/small_358.ppm
+./sub1/small_359.ppm
+./sub1/small_360.ppm
+./sub1/small_361.ppm
+./sub1/small_362.ppm
+./sub1/small_363.ppm
+./sub1/small_364.ppm
+./sub1/small_365.ppm
+./sub1/small_366.ppm
+./sub1/small_367.ppm
+./sub1/small_368.ppm
+./sub1/small_369.ppm
+./sub1/small_370.ppm
+./sub1/small_371.ppm
+./sub1/small_372.ppm
+./sub1/small_373.ppm
+./sub1/small_374.ppm
+./sub1/small_375.ppm
+./sub1/small_376.ppm
+./sub1/small_377.ppm
+./sub1/small_378.ppm
+./sub1/small_379.ppm
+./sub1/small_380.ppm
+./sub1/small_381.ppm
+./sub1/small_382.ppm
+./sub1/small_383.ppm
+./sub1/small_384.ppm
+./sub1/small_385.ppm
+./sub1/small_386.ppm
+./sub1/small_387.ppm
+./sub1/small_388.ppm
+./sub1/small_389.ppm
+./sub1/small_390.ppm
+./sub1/small_391.ppm
+./sub1/small_392.ppm
+./sub1/small_393.ppm
+./sub1/small_394.ppm
+./sub1/small_395.ppm
+./sub1/small_396.ppm
+./sub1/small_397.ppm
+./sub1/small_398.ppm
+./sub1/small_399.ppm
+./sub1/small_400.ppm
+./sub1/small_401.ppm
+./sub1/small_402.ppm
+./sub1/small_403.ppm
+./sub1/small_404.ppm
+./sub1/small_405.ppm
+./sub1/small_406.ppm
+./sub1/small_407.ppm
+./sub1/small_408.ppm
+./sub1/small_409.ppm
+./sub1/small_410.ppm
+./sub1/small_411.ppm
+./sub1/small_412.ppm
+./sub1/small_413.ppm
+./sub1/small_414.ppm
+./sub1/small_415.ppm
+./sub1/small_416.ppm
+./sub1/small_417.ppm
+./sub1/small_418.ppm
+./sub1/small_419.ppm
+./sub1/small_420.ppm
+./sub1/small_421.ppm
+./sub1/small_422.ppm
+./sub1/small_423.ppm
+./sub1/small_424.ppm
+./sub1/small_425.ppm
+./sub1/small_426.ppm
+./sub1/small_427.ppm
+./sub1/small_428.ppm
+./sub1/small_429.ppm
+./sub1/small_430.ppm
+./sub1/small_431.ppm
+./sub1/small_432.ppm
+./sub1/small_433.ppm
+./sub1/small_434.ppm
+./sub1/small_435.ppm
+./sub1/small_436.ppm
+./sub1/small_437.ppm
+./sub1/small_438.ppm
+./sub1/small_439.ppm
+./sub1/small_440.ppm
+./sub1/small_441.ppm
+./sub1/small_442.ppm
+./sub1/small_443.ppm
+./sub1/small_444.ppm
+./sub1/small_445.ppm
+./sub1/small_446.ppm
+./sub1/small_447.ppm
+./sub1/small_448.ppm
+./sub1/small_449.ppm
+./sub1/small_450.ppm
+./sub1/small_451.ppm
+./sub1/small_452.ppm
+./sub1/small_453.ppm
+./sub1/small_454.ppm
+./sub1/small_455.ppm
+./sub1/small_456.ppm
+./sub1/small_457.ppm
+./sub1/small_458.ppm
+./sub1/small_459.ppm
+./sub1/small_460.ppm
+./sub1/small_461.ppm
+./sub1/small_462.ppm
+./sub1/small_463.ppm
+./sub1/small_464.ppm
+./sub1/small_479.ppm
+./sub1/small_480.ppm
+./sub1/small_481.ppm
+./sub1/small_482.ppm
+./sub1/small_483.ppm
+./sub1/small_484.ppm
+./sub1/small_485.ppm
+./sub1/small_486.ppm
+./sub1/small_487.ppm
+./sub1/small_488.ppm
+./sub1/small_489.ppm
+./sub1/small_490.ppm
+./sub1/small_491.ppm
+./sub1/small_492.ppm
+./sub1/small_493.ppm
+./sub1/small_494.ppm
+./sub1/small_495.ppm
+./sub1/small_496.ppm
+./sub1/small_497.ppm
+./sub1/small_498.ppm
+./sub1/small_499.ppm
+The most similar image is ./sub4/small_466.ppm with a distance of 1.562500
+[SUCCESS]: [CASE]: many_small_pics
+
+[INFO]: Testing with mixed_valid_invalid_image and expecting: Basket_018.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/mixed_valid_invalid_image ../A3_testcases//source_images/mixed_valid_invalid_image.ppm
+Processing all images in directory: ../A3_testcases/mixed_valid_invalid_image/sub3 
+../A3_testcases/mixed_valid_invalid_image/sub3/Basket_003.ppm
+../A3_testcases/mixed_valid_invalid_image/sub3/Basket_004.ppm
+../A3_testcases/mixed_valid_invalid_image/sub3/Basket_005.ppm
+../A3_testcases/mixed_valid_invalid_image/sub3/Basket_006.ppm
+Processing all images in directory: ../A3_testcases/mixed_valid_invalid_image/sub 
+../A3_testcases/mixed_valid_invalid_image/sub/.DS_Store
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_000.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_001.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_002.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_007.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_015.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_016.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_017.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_018.ppm
+../A3_testcases/mixed_valid_invalid_image/sub/Basket_019.ppm
+Processing all images in directory: ../A3_testcases/mixed_valid_invalid_image/sub2 
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_008.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_009.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_010.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_011.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_012.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_013.ppm
+../A3_testcases/mixed_valid_invalid_image/sub2/Basket_014.ppm
+The most similar image is ../A3_testcases/mixed_valid_invalid_image/sub/Basket_018.ppm with a distance of 3.863884
+[SUCCESS]: [CASE]: mixed_valid_invalid_image
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s image_retrieval ../source_images/mixed_valid_invalid_image.ppm
+Processing all images in directory: ./sub3 
+./sub3/Basket_003.ppm
+./sub3/Basket_004.ppm
+./sub3/Basket_005.ppm
+./sub3/Basket_006.ppm
+Processing all images in directory: ./sub 
+./sub/.DS_Store
+./sub/Basket_000.ppm
+./sub/Basket_001.ppm
+./sub/Basket_002.ppm
+./sub/Basket_007.ppm
+./sub/Basket_015.ppm
+./sub/Basket_016.ppm
+./sub/Basket_017.ppm
+./sub/Basket_018.ppm
+./sub/Basket_019.ppm
+Processing all images in directory: ./sub2 
+./sub2/Basket_008.ppm
+./sub2/Basket_009.ppm
+./sub2/Basket_010.ppm
+./sub2/Basket_011.ppm
+./sub2/Basket_012.ppm
+./sub2/Basket_013.ppm
+./sub2/Basket_014.ppm
+The most similar image is ./sub/Basket_018.ppm with a distance of 3.863884
+[SUCCESS]: [CASE]: mixed_valid_invalid_image
+
+[INFO]: Testing with non_ppm_image and expecting: No output or atleast program should not crash
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/non_ppm_image ../A3_testcases//source_images/non_ppm_image.ppm
+Processing all images in directory: ../A3_testcases/non_ppm_image/subfolder 
+../A3_testcases/non_ppm_image/subfolder/basket_70.ppm
+../A3_testcases/non_ppm_image/subfolder/big_table_70.txt
+../A3_testcases/non_ppm_image/subfolder/black_buck_70.ppm
+../A3_testcases/non_ppm_image/subfolder/giraffe_70.jpg
+../A3_testcases/non_ppm_image/subfolder/small_70.ppm
+../A3_testcases/non_ppm_image/subfolder/table_70.ppm
+../A3_testcases/non_ppm_image/subfolder/whale_70.ppm
+The most similar image is  with a distance of 340282346638528859811704183484516925440.000000
+[SUCCESS]: [CASE]: non_ppm_image
+
+[INFO]: Testing with no_similar_images and expecting: basket_chopped.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/no_similar_images ../A3_testcases//source_images/no_similar_images.ppm
+Processing all images in directory: ../A3_testcases/no_similar_images/subfolder 
+../A3_testcases/no_similar_images/subfolder/.DS_Store
+../A3_testcases/no_similar_images/subfolder/basket_chopped.ppm
+../A3_testcases/no_similar_images/subfolder/big_table_chopped.ppm
+../A3_testcases/no_similar_images/subfolder/whale_cropped.ppm
+The most similar image is ../A3_testcases/no_similar_images/subfolder/basket_chopped.ppm with a distance of 118.488029
+[SUCCESS]: [CASE]: no_similar_images
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s image_retrieval ../source_images/no_similar_images.ppm
+Processing all images in directory: ./subfolder 
+./subfolder/.DS_Store
+./subfolder/basket_chopped.ppm
+./subfolder/big_table_chopped.ppm
+./subfolder/whale_cropped.ppm
+The most similar image is ./subfolder/basket_chopped.ppm with a distance of 118.488029
+[SUCCESS]: [CASE]: no_similar_images
+
+[INFO]: Testing with no_sub_folder and expecting: No output or atleast program should not crash
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/no_sub_folder ../A3_testcases//source_images/no_sub_folder.ppm
+The most similar image is  with a distance of 340282346638528859811704183484516925440.000000
+[SUCCESS]: [CASE]: no_sub_folder
+
+[INFO]: Testing with similar_images_multiple_small and expecting any of: small_02.ppm, small_dis13_1.ppm, small_dis13_2.ppm, small_dis13_3.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/similar_images_multiple_small ../A3_testcases//source_images/similar_images_multiple_small.ppm
+Processing all images in directory: ../A3_testcases/similar_images_multiple_small/subfolder 
+../A3_testcases/similar_images_multiple_small/subfolder/small_00.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_01.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_02.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_03.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_04.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_05.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_06.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_07.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_08.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_09.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_dis13_1.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_dis13_2.ppm
+../A3_testcases/similar_images_multiple_small/subfolder/small_dis13_3.ppm
+The most similar image is ../A3_testcases/similar_images_multiple_small/subfolder/small_02.ppm with a distance of 0.812500
+[SUCCESS]: [CASE]: similar_images_multiple_small
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s image_retrieval ../source_images/similar_images_multiple_small.ppm
+Processing all images in directory: ./subfolder 
+./subfolder/small_00.ppm
+./subfolder/small_01.ppm
+./subfolder/small_02.ppm
+./subfolder/small_03.ppm
+./subfolder/small_04.ppm
+./subfolder/small_05.ppm
+./subfolder/small_06.ppm
+./subfolder/small_07.ppm
+./subfolder/small_08.ppm
+./subfolder/small_09.ppm
+./subfolder/small_dis13_1.ppm
+./subfolder/small_dis13_2.ppm
+./subfolder/small_dis13_3.ppm
+The most similar image is ./subfolder/small_02.ppm with a distance of 0.812500
+[SUCCESS]: [CASE]: similar_images_multiple_small
+
+[INFO]: Testing with similar_images_unique_large and expecting: whale_00.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/similar_images_unique_large ../A3_testcases//source_images/similar_images_unique_large.ppm
+Processing all images in directory: ../A3_testcases/similar_images_unique_large/subfolder 
+../A3_testcases/similar_images_unique_large/subfolder/whale_00.ppm
+../A3_testcases/similar_images_unique_large/subfolder/whale_01.ppm
+../A3_testcases/similar_images_unique_large/subfolder/whale_02.ppm
+../A3_testcases/similar_images_unique_large/subfolder/whale_03.ppm
+../A3_testcases/similar_images_unique_large/subfolder/whale_04.ppm
+The most similar image is ../A3_testcases/similar_images_unique_large/subfolder/whale_00.ppm with a distance of 0.005431
+[SUCCESS]: [CASE]: similar_images_unique_large
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s image_retrieval ../source_images/similar_images_unique_large.ppm
+Processing all images in directory: ./subfolder 
+./subfolder/whale_00.ppm
+./subfolder/whale_01.ppm
+./subfolder/whale_02.ppm
+./subfolder/whale_03.ppm
+./subfolder/whale_04.ppm
+The most similar image is ./subfolder/whale_00.ppm with a distance of 0.005431
+[SUCCESS]: [CASE]: similar_images_unique_large
+
+[INFO]: Testing with similar_images_unique_small and expecting: small_05.ppm
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/similar_images_unique_small ../A3_testcases//source_images/similar_images_unique_small.ppm
+Processing all images in directory: ../A3_testcases/similar_images_unique_small/to_compare 
+../A3_testcases/similar_images_unique_small/to_compare/small_00.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_01.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_02.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_03.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_04.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_05.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_06.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_07.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_08.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_09.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_10.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_11.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_12.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_13.ppm
+../A3_testcases/similar_images_unique_small/to_compare/small_14.ppm
+The most similar image is ../A3_testcases/similar_images_unique_small/to_compare/small_05.ppm with a distance of 0.437500
+[SUCCESS]: [CASE]: similar_images_unique_small
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s image_retrieval ../source_images/similar_images_unique_small.ppm
+Processing all images in directory: ./to_compare 
+./to_compare/small_00.ppm
+./to_compare/small_01.ppm
+./to_compare/small_02.ppm
+./to_compare/small_03.ppm
+./to_compare/small_04.ppm
+./to_compare/small_05.ppm
+./to_compare/small_06.ppm
+./to_compare/small_07.ppm
+./to_compare/small_08.ppm
+./to_compare/small_09.ppm
+./to_compare/small_10.ppm
+./to_compare/small_11.ppm
+./to_compare/small_12.ppm
+./to_compare/small_13.ppm
+./to_compare/small_14.ppm
+The most similar image is ./to_compare/small_05.ppm with a distance of 0.437500
+[SUCCESS]: [CASE]: similar_images_unique_small
+
+[INFO]: Testing with similar_images_with_diff_size and expecting: No output or atleast program should not crash
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/similar_images_with_diff_size ../A3_testcases//source_images/similar_images_with_diff_size.ppm
+Processing all images in directory: ../A3_testcases/similar_images_with_diff_size/subfolder 
+../A3_testcases/similar_images_with_diff_size/subfolder/black_buck_00_cropped.ppm
+../A3_testcases/similar_images_with_diff_size/subfolder/black_buck_01_cropped.ppm
+../A3_testcases/similar_images_with_diff_size/subfolder/black_buck_02_cropped.ppm
+../A3_testcases/similar_images_with_diff_size/subfolder/black_buck_03_cropped.ppm
+The most similar image is  with a distance of 340282346638528859811704183484516925440.000000
+[SUCCESS]: [CASE]: similar_images_with_diff_size
+
+[INFO]: Testing with valid_ppm_with_non_ppm_suffix and expecting: basket_01.jpg
+[INFO]: Testing with -d option
+Invoking: timeout 30s image_retrieval -d ../A3_testcases/valid_ppm_with_non_ppm_suffix ../A3_testcases//source_images/valid_ppm_with_non_ppm_suffix.ppm
+Processing all images in directory: ../A3_testcases/valid_ppm_with_non_ppm_suffix/sub 
+../A3_testcases/valid_ppm_with_non_ppm_suffix/sub/basket_00.txt
+../A3_testcases/valid_ppm_with_non_ppm_suffix/sub/basket_01.jpg
+../A3_testcases/valid_ppm_with_non_ppm_suffix/sub/basket_02.png
+The most similar image is ../A3_testcases/valid_ppm_with_non_ppm_suffix/sub/basket_01.jpg with a distance of 2.201077
+[INFO]: Testing distance for valid_ppm_with_non_ppm_suffix and expecting: 2.201077
+[SUCCESS]: [CASE]: distance for valid_ppm_with_non_ppm_suffix
+[SUCCESS]: [CASE]: valid_ppm_with_non_ppm_suffix
+
+[INFO]: Testing without -d option
+Invoking: timeout 30s image_retrieval ../source_images/valid_ppm_with_non_ppm_suffix.ppm
+Processing all images in directory: ./sub 
+./sub/basket_00.txt
+./sub/basket_01.jpg
+./sub/basket_02.png
+The most similar image is ./sub/basket_01.jpg with a distance of 2.201077
+[INFO]: Testing distance for valid_ppm_with_non_ppm_suffix and expecting: 2.201077
+[SUCCESS]: [CASE]: distance for valid_ppm_with_non_ppm_suffix
+[SUCCESS]: [CASE]: valid_ppm_with_non_ppm_suffix
+
+TESTS (out of 55): 55.00
+
+Final Mark (out of 80): 80.00

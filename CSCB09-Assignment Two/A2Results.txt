@@ -1,0 +1,400 @@
+=======================================================================================================================================================
+utorID: subeetha
+
+===== Testing compilation and error messages =====
+[PASS] No issues with compilation!
+
+
+===== Testing invalid command entered - not i, q or p =====
+./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] stdout output:
+
+[LOG] stderr output:
+Invalid command
+
+[PASS] Correct output
+
+===== Testing invalid command entered - more than 5 args for i =====
+./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] stdout output:
+
+[LOG] stderr output:
+Invalid command
+
+[PASS] Correct output
+
+===== Testing invalid command entered - less than 5 args for i =====
+./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] stdout output:
+
+[LOG] stderr output:
+Invalid command
+
+[PASS] Correct output
+
+===== Testing invalid command entered - more than 4 args for q =====
+./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] stdout output:
+
+[LOG] stderr output:
+Invalid command
+
+[PASS] Correct output
+
+===== Testing invalid command entered - less than 4 args for q =====
+./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] stdout output:
+
+[LOG] stderr output:
+Invalid command
+
+[PASS] Correct output
+
+===== Testing invalid command entered - more than 1 arg to p =====
+./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] stdout output:
+
+[LOG] stderr output:
+Invalid command
+
+[PASS] Correct output
+
+===== Testing functionality - Insert one file =====
+
+Insertion commands:
+i red round shiny i1
+
+Testing tree structure...
+
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+Testing tree structure with instructor tree print function
+[LOG] expected output:
+red round shiny i1
+
+[LOG] given output:
+red round shiny i1
+
+[PASS] correct tree structure
+
+Testing Queries...
+
+Testing query: q red round shiny
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+i1
+[LOG] given output:
+i1 
+[PASS] correct query output
+
+Testing Print...
+
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+red round shiny i1
+
+[LOG] given output:
+red round shiny i1 
+
+[PASS] correct print output
+
+===== Testing functionality - Insert multiple files with same attribute =====
+
+Insertion commands:
+i yellow square matte i1
+i yellow square matte i2
+i yellow square matte i3
+i yellow square matte i4
+
+Testing tree structure...
+
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+Testing tree structure with instructor tree print function
+[LOG] expected output:
+yellow square matte i1
+yellow square matte i2
+yellow square matte i3
+yellow square matte i4
+
+[LOG] given output:
+yellow square matte i1
+yellow square matte i2
+yellow square matte i3
+yellow square matte i4
+
+[PASS] correct tree structure
+
+Testing Queries...
+
+Testing query: q yellow square matte
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+i1 i2 i3 i4
+[LOG] given output:
+i1 i2 i3 i4 
+[PASS] correct query output
+
+Testing query: q red round shiny
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+(NULL)
+[LOG] given output:
+(NULL)
+[PASS] correct query output
+
+Testing Print...
+
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+yellow square matte i1
+yellow square matte i2
+yellow square matte i3
+yellow square matte i4
+
+[LOG] given output:
+yellow square matte i1 
+yellow square matte i2 
+yellow square matte i3 
+yellow square matte i4 
+
+[PASS] correct print output
+
+===== Testing functionality - Insert multiple files with different attribute =====
+
+Insertion commands:
+i yellow square matte i1
+i red round shiny i2
+i green triangular eggshell i3
+i orange oblong smooth i4
+
+Testing tree structure...
+
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+Testing tree structure with instructor tree print function
+[LOG] expected output:
+green triangular eggshell i3
+orange oblong smooth i4
+red round shiny i2
+yellow square matte i1
+
+[LOG] given output:
+green triangular eggshell i3
+orange oblong smooth i4
+red round shiny i2
+yellow square matte i1
+
+[PASS] correct tree structure
+
+Testing Queries...
+
+Testing query: q yellow square matte
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+i1
+[LOG] given output:
+i1 
+[PASS] correct query output
+
+Testing query: q red round shiny
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+i2
+[LOG] given output:
+i2 
+[PASS] correct query output
+
+Testing query: q green triangular eggshell
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+i3
+[LOG] given output:
+i3 
+[PASS] correct query output
+
+Testing Print...
+
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+green triangular eggshell i3
+orange oblong smooth i4
+red round shiny i2
+yellow square matte i1
+
+[LOG] given output:
+green triangular eggshell i3 
+orange oblong smooth i4 
+red round shiny i2 
+yellow square matte i1 
+
+[PASS] correct print output
+
+===== Testing functionality - Insert multiple files with 1st attribute same and 2nd and 3rd attribute different =====
+
+Insertion commands:
+i red triangular smooth file4
+i red square eggshell file3
+i red oblong shiny file2
+i red round matte file1
+
+Testing tree structure...
+
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+Testing tree structure with instructor tree print function
+[LOG] expected output:
+red oblong shiny file2
+red round matte file1
+red square eggshell file3
+red triangular smooth file4
+
+[LOG] given output:
+red oblong shiny file2
+red round matte file1
+red square eggshell file3
+red triangular smooth file4
+
+[PASS] correct tree structure
+
+Testing Queries...
+
+Testing query: q red triangular smooth
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+file4
+[LOG] given output:
+file4 
+[PASS] correct query output
+
+Testing query: q red round matte
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+file1
+[LOG] given output:
+file1 
+[PASS] correct query output
+
+Testing query: q red oblong shiny
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+file2
+[LOG] given output:
+file2 
+[PASS] correct query output
+
+Testing query: q red square eggshell
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+file3
+[LOG] given output:
+file3 
+[PASS] correct query output
+
+Testing Print...
+
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+red oblong shiny file2
+red round matte file1
+red square eggshell file3
+red triangular smooth file4
+
+[LOG] given output:
+red oblong shiny file2 
+red round matte file1 
+red square eggshell file3 
+red triangular smooth file4 
+
+[PASS] correct print output
+
+===== Testing functionality - Insert multiple files with different combination of attributes repeating =====
+
+Insertion commands:
+i red round shiny file2
+i yellow square matte i4
+i red round matte file1
+i yellow square matte i1
+i red round smooth f5
+i red square matte f3
+
+Testing tree structure...
+
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+Testing tree structure with instructor tree print function
+[LOG] expected output:
+red round matte file1
+red round shiny file2
+red round smooth f5
+red square matte f3
+yellow square matte i1
+yellow square matte i4
+
+[LOG] given output:
+red round matte file1
+red round shiny file2
+red round smooth f5
+red square matte f3
+yellow square matte i1
+yellow square matte i4
+
+[PASS] correct tree structure
+
+Testing Queries...
+
+Testing query: q red square matte
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+f3
+[LOG] given output:
+f3 
+[PASS] correct query output
+
+Testing query: q yellow square matte
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+i1 i4
+[LOG] given output:
+i1 i4 
+[PASS] correct query output
+
+Testing query: q red round shiny
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+file2
+[LOG] given output:
+file2 
+[PASS] correct query output
+
+Testing query: q red round smooth
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+f5
+[LOG] given output:
+f5 
+[PASS] correct query output
+
+Testing query: q red round matte
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+file1
+[LOG] given output:
+file1 
+[PASS] correct query output
+
+Testing Print...
+
+Invoking: ./image_database < current_test_input.txt > student_stdout.txt 2> student_stderr.txt
+[LOG] expected output:
+red round matte file1
+red round shiny file2
+red round smooth f5
+red square matte f3
+yellow square matte i1
+yellow square matte i4
+
+[LOG] given output:
+red round matte file1 
+red round shiny file2 
+red round smooth f5 
+red square matte f3 
+yellow square matte i1 
+yellow square matte i4 
+
+[PASS] correct print output
